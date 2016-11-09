@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>label</title>
+</head>
+<body>
+
+
+<!-- label은 시각장애인을 위한 연결해주는 프로그램
+label을 이해
+label을 꼬리표라고 생각하고 id를 그 사이에 연결에주는 고리라고 생각하자 -->
+
+<label for="userid">아이디</label>
+<input type="text" id="userid" placeholder="아이디입력">
+<input type="text" id="userid2" placeholder="아이디입력">
+<!-- id의 경우 한 body안에 같은 이름의 id가 존재해서는 안된다. -->
+<p>
+<label for="name">이름</label>
+<input type="name" id="name" placeholder="이름 입력" />
+</p>
+
+<p>
+<label for="password">비밀번호</label>
+<input type="password" id="password" placeholder="비밀번호 입력" />
+</p>
+
+<p>
+<label for="man">남자</label>
+<input type="radio" id="man" name="trans" />
+<label for="woman">여자</label>
+<input type="radio" id="woman" name="trans"/>
+
+</p>
+
+<p>
+
+<label for="sports1">농구</label>
+<input type="checkbox" id="sports1">
+
+<label for="sports2">야구</label>
+<input type="checkbox" id="sports2">
+
+<label for="sports3">배구</label>
+<input type="checkbox" id="sports3">
+
+</p>
+
+<p>
+<select>
+<option>gmail.com</option>
+<option>naver.com</option>
+<option>daum.net</option>
+<option>google.com</option>
+</select>
+</p>
+
+<p>
+<textarea row="8" clos= "40" placeholder="내용을입력"></textarea>
+</p>
+
+
+<p>-----------------------------------------------------------</p>
+
+
+<p>
+<!-- 예제 -->
+
+<label for="list">과일품목
+<select id="list">
+<option>사과</option>
+<option>배</option>
+<option>바나나</option>
+<option>수박</option>
+</select></label>
+
+<label for="toc">댓글
+<textarea row="8" clos= "40" placeholder="내용을입력" id="toc"></textarea></label>
+
+
+</p>
+
+
+</body>
+</html>
