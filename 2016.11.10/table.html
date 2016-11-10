@@ -6,5 +6,113 @@
 </head>
 <body>
 
+<!-- table은 표를 만들때 쓰는 태그 -->
+<table border="1" width="400">
+<tr>
+  <td>사과</td>
+  <td>배</td>
+  <td>오렌지</td>
+  <td>포도</td>
+</tr>
+<tr>
+  <td>사과</td>
+  <td>배</td>
+  <td>오렌지</td>
+  <td>포도</td>
+</tr>
+
+</table>
+
+<p></p>
+
+<table border="1" width="400">
+<!-- caption은 작성된 table에 제목을 붙일수 있게한다. -->
+<caption>시간표</caption>
+<!-- colgroup은 묶어놓은 표의(칸) 사이즈를 조절할수있다
+예:)<col width="사이즈">
+  -->
+<colgroup>
+ <col width="100" />
+ <col width="150" />
+ <col width="100" />
+ <col width="50" />
+</colgroup>
+
+<thead>
+<!-- th는 기본 td에서 조금더 제목같이 보이는 역할을 한다.중앙정렬에 굵게표시. -->
+  <tr>
+    <th>월</th>
+    <th>화</th>
+    <th>수</th>
+    <th>목</th>
+  </tr>
+</thead>
+<tfoot>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>합계</td>
+    <td>100만원</td>
+  </tr>
+</tfoot>
+<tbody>
+  <tr>
+    <td>사과</td>
+    <td>배</td>
+    <td>오렌지</td>
+    <td>포도</td>
+  </tr>
+</tbody>
+
+<!--tbody는 꼭 필요하나, thead와 tfoot의 경우는 그리 중요하지않다.
+순서는 머리 발 몸순.
+시각장애인의 경우 소리로 들려줄때 조금더 빨리 정보를 알수있겠금한다
+ -->
+ </table>
+
+<p></p>
+
+<table border="1" width="400">
+
+ <tbody>
+ <tr>
+   <th>사과</th>
+   <td>배</td>
+   <td>오렌지</td>
+   <td>포도</td>
+ </tr>
+ <tr>
+   <th>월</th>
+   <th>화</th>
+   <th>수</th>
+   <th>목</th>
+ </tr>
+ </tbody>
+<!-- tbody만으로도 구동이 가능
+이때 가로에 위치한 글자를 소제목이 되게하고싶다면
+<tr>
+  <td>사과</td>  <<쓰여있는 <td>를 둘다 <th>로 고쳐주면된다.맨위에항목에만 적용시켜야한다.
+  <td>배</td>
+  <td>오렌지</td>
+  <td>포도</td>
+</tr>
+  -->
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
