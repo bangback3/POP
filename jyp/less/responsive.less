@@ -9,16 +9,40 @@
          nav{
           .menu{
               display: block;
-              &:hover + ul{
-                  display: block;
-              }
           }
           ul{
+              width: 200px;
               position: absolute;
-              display: block;
-            }
+              display: none;
 
-            
-          }
-      }
+
+              li{
+                  float: none;
+                  border: 1px #F00 solid;
+                  display: block;
+                  height: 55px;
+                  line-height: 55px;
+
+                  a{
+                      transition: .1s;
+                      border-left: 0px @bace-color solid;
+                      &:hover{
+                          border-top:0;
+                          border-left:5px @bace-color solid;
+                      }
+                   }
+                 }
+               }
+             }
+           }
+section{
+    .biglogo{
+      top:10%;
+      left:50%;
+      margin-left:-160px;
+      transform:scale(0.8);
+     }
+}  
+
+
 }

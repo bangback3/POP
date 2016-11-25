@@ -10,7 +10,8 @@ body{
     background-repeat:no-repeat;
     .bgsize(cover);
     background-position:center 0;
-}
+    }
+
 
 header{
     height: 100px;
@@ -42,8 +43,7 @@ header{
             height: 55px;
             width: 200px;
             background-color:@text-color;
-            position: relative;
-            left:20px;
+            margin-right: -20px;
             line-height:55px;
             text-align: center;
             color:#FFF;
@@ -55,13 +55,12 @@ header{
             height: 100px;
             line-height:100px;
             &:hover{
-                //cursor:painter;
+                //cursor:pointer;
                 background-color:rgba(255,255,255,.7);
 
             }
 
             a{
-                position: absolute;
                 display:block;
                 padding: 0 18px;
                 text-decoration: none;
@@ -70,7 +69,7 @@ header{
                 transition: .1s;
                 font-weight:bold;
                 &:hover{
-                    border-top:0 @text-color solid;
+                    border-top:2px @text-color solid;
                     color:@bace-color;
 
                 }
@@ -79,5 +78,55 @@ header{
 
 
         }
+    }
+}
+
+section{
+
+    .biglogo{
+        border:1px #F00 solid;
+        width: 320px;
+        height: 320px;
+        background-image: url(@biglogo);
+        position:absolute;
+        left:60%;
+        top:30%;
+        transition:1s;
+        &:hover{
+            transform:scale(1.3);
+            opacity:0;
+        }
+    }
+
+}
+
+footer{
+    border: 1px #00F solid;
+    width: 100%;
+    height: 57px;
+    background-image:url(@bimg);
+    bottom: 0;
+    position: fixed;
+    .jyplogo{
+        border: 1px #00F solid;
+        display: block;
+        width: 115px;
+        height: 45px;
+        background-image: url(@jyplogo);
+        float: left;
+        position: relative;
+        left: 7%;
+        top:5px;
+        text-indent: -9999px;
+        font-size: 0;
+    }
+    .snslogo{
+        border: 1px #00F solid;
+        width: 180px;
+        height: 30px;
+        float: right;
+        position: relative;
+        top:15px;
+        right: 3%;
     }
 }

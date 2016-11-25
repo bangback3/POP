@@ -5,6 +5,22 @@
     <meta charset="UTF-8">
     <title>jyp</title>
     <link rel="stylesheet" href="css/import.css" type="text/css" />
+    <link rel="stylesheet" href="font/flaticon.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu').click(function() {
+                $(this).next('ul').slideToggle(1000);
+            })
+        })
+    </script>
+    <style type="text/css">
+        .flaticon-facebook-logo-button:before {
+            font-size: 100px;
+            color: #00F;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -26,6 +42,19 @@
 
 
     </header>
+    <section>
+        <div class="biglogo"></div>
+        <i class="flaticon-facebook-logo-button"></i>
+    </section>
+    <footer>
+        <div class="jyplogo"><a href="">jyplogo</a></div>
+        <div class="snslogo"></div>
+
+    </footer>
+
+</body>
+
+</html>
 
 
 </body>
