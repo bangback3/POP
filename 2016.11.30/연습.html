@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+
+    var user = prompt("만들사람 이름을 적으세요.");
+
+    alert("어디한번 "+user+"를(을) 만들어볼까?");
+    alert("확인을 누르면 만들어집니다.");
+
+    var text1 = []
+    var text2 = []
+    var text3 = []
+
+    var ran1 = [Math.floor(Math.random() * text1.length)]
+    console.log(ran1);
+    var ran2 = [Math.floor(Math.random() * text2.length)]
+    var ran3 = [Math.floor(Math.random() * text3.length)]
+
+    document.write(user+"님...."+"  "+text1[ran1]+"  "+text2[ran2]+"  "+text3[ran3])
+    </script>
+</head>
+<body>
+
+</body>
+</html>

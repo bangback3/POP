@@ -10,20 +10,30 @@
 // console.log(Math.floor(Math.random() * 100))
 // console.log(random_number)
 
-var user = prompt("만들 사람을 입력해주세요.");
+// var user = prompt("만들 사람을 입력해주세요.");
+//
+// alert("어디한번 "+user+"를 만들어볼까?");
+// alert("확인을 누르면 만들어집니다.");
 
-alert("어디한번 "+user+"를 만들어볼까?");
-alert("확인을 누르면 만들어집니다.");
+var text = [
+["일단은","어디보자..","음","어이쿠!"],
+["뇌청순","키","먹성","지능","인성","미모","손재주","재력"],
+["한숟깔","한방울","으아ㅏㅏ아ㅏㅏㅏㅏㅏ","(((((((((((((잊어버림)))))))))))))"]
+]
+// var ran1 = Math.floor(Math.random() * text1.length);
+// var ran2 = Math.floor(Math.random() * text2.length);
+// var ran3 = Math.floor(Math.random() * text3.length);
 
-var text1 = ["일단은","어디보자..","음","어이쿠!"]
-var text2 = ["뇌청순","키","먹성","지능","인성","미모","손재주","재력"]
-var text3 = ["한숟깔","한방울","으아ㅏㅏ아ㅏㅏㅏㅏㅏ","(((((((((((((잊어버림)))))))))))))"]
+var html = "";
 
-var ran1 = Math.floor(Math.random() * text1.length);
-var ran2 = Math.floor(Math.random() * text2.length);
-var ran3 = Math.floor(Math.random() * text3.length);
-
-document.write(user+"님....."+text1[ran1]+"  "+text2[ran2]+"  "+text3[ran3])
+for(i=0; i<text.length; i++){
+    var randoms = Math.floor(Math.random() * text[i].length);
+    console.log(text.length)
+    html += text[i][randoms]+" ";
+    // console.log(html)
+}
+document.write(html)
+// document.write(user+"님....."+text1[ran1]+"  "+text2[ran2]+"  "+text3[ran3])
 
 
 
