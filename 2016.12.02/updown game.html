@@ -1,0 +1,23 @@
+<script type="text/javascript">
+
+    var numberScope = 100; //게임내의 범위숫자//var은 변수라고 말해주는 언어이다.ex)var numberScope = numberScope은 변수야.라는 말과 같다.
+    var randomNum = Math.random() * numberScope;//게임내의 범위숫자를 랜덤하게 돌려준다.
+    var ranNum = Math.floor(randomNum);//랜덤하게 돌려진 게임내의 범위숫자를 소수점에서 정수로 바꿔준다.
+    var count = prompt('count!!');//게임의 횟수를 정해줄수있다.
+
+    for(i=0; i < count; i++){//정한 카운트횟수에 맞게 게임을 실행및 끝나게 해줄 조건.
+
+        var entry = prompt('input in number');//prompt로 어떤숫자를 넣을지묻는다.
+
+
+            if(ranNum > entry){//랜덤한 숫자 > 사용자가 물어본숫자
+                alert('Up!');//랜덤한 숫자가 크면 up!
+            }else if(ranNum < entry){//랜덤한 숫자 < 사용자가 물어본숫자
+                alert('Down!');//랜덤한 숫자가 작으면 down!
+            }else if(ranNum == entry){//랜덤한 숫자 = 사용자가 물어본숫자
+                alert('BingGo!');//즉 답을 맞추게되면 BingGo가 뜨며 게임종료.
+                break;
+            }
+    }
+
+</script>

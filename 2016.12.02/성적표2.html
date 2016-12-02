@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        var nameArr = [];
+        var scoreArr = [];
+
+        var max_user = prompt('학생의 수를 입력해주세요');
+        var check = confirm(max_user+"인원이 맞습니까?")
+
+        if(check){
+
+            for(var i=0; i<max_user; i++){
+            var name = prompt('이름을 입력하세요.');
+            var score = prompt('점수를 입력하세요');
+            nameArr.unshift(name);//unshift로 name들어간 이름을 배열인 nameArr에 추가시켜줌.
+            scoreArr.unshift(score);
+        }
+        document.write(nameArr + "<br/>" +scoreArr)
+        var nexts = confirm('입력정보가 맞습니까?');
+
+        if(nexts){
+            console.log('반 전체 평균을 산출합니다.');
+            var score = 0;
+
+        for(i=0; i<scoreArr.length; i++){
+            score += Number(scoreArr[i]);//score의 숫자를 누적시켜 더한다.
+        }
+
+        var avr = score/max_user;
+
+        if(avr >= 0 && avr <= 19){
+            console.log('가')
+        }else if(avr >= 20 && avr <= 39){
+            console.log('양')
+        }else if(avr >= 40 && avr <= 69){
+            console.log('미')
+        }else if(avr >= 70 && avr <= 89){
+            console.log('우')
+        }else if(avr >= 90 && avr <= 100){
+            console.log('수')
+        }
+
+
+            document.write('반전체 평균은'+avr+'점입니다.')
+        }else if(!nexts){
+            alert('프로그램을 종료합니다')
+        }
+
+
+        console.log(nameArr,scoreArr)
+
+    }else if(!check){
+        console.log('re');
+    }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
