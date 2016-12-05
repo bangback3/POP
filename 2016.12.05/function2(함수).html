@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        var userList = [[],[]];//var userList = [];
+                               //var score = [];
+                               //과 같다.
+
+        function addUser(){
+            var user = prompt('사용자를 입력해주세요!');
+            var score = prompt('점수입력');
+
+            userList[0].unshift(user);
+            userList[1].unshift(score);
+
+            console.log(userList)
+        }
+
+        function avg(){
+            var score = 0;
+
+            if(userList[1].length == 0){
+                alert('점수를 입력해야 내가 평균을 내지..')
+            }else{
+
+            for(i=0; i<userList[1].length; i++){
+            score += Number(userList[1][i]); //변수[i]가 들어가는 이유는
+                                                // 현재 for문에서 반복되는 i를 지목해주기위함이다.
+            }
+            var avg = score/userList[1].length
+            console.log(score/userList[1].length)
+        }
+
+
+        }
+
+    </script>
+</head>
+<body>
+    <button type="button" onclick="addUser()">학생추가</button>
+    <button type="button" onclick="avg()">평균내기</button>
+</body>
+</html>
