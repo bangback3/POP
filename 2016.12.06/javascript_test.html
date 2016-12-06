@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        var cardeck = [];
+        var cardShape = ['♥','♣','♠','◆'];
+        var users = [];
+
+        // function gamestart(){
+        //
+        //     for(i=0; i<cardeck.length; i++){
+        //     var rcard = Math.floor(Math.random() * cardeck.length)
+        //     users.unshift(cardeck[rcard]);
+        //     cardeck.splice(rcard,1);
+        //
+        //     console.log(rcard)
+        // }
+        //
+        // }
+
+
+
+        function call(){
+
+                var rcard = Math.floor(Math.random() * cardeck.length)
+                users.unshift(cardeck[rcard]);
+                cardeck.splice(rcard,1);
+
+console.log(cardeck)
+console.log(users)
+        }
+
+        function cardMake(){
+            cardeck = [];
+            for(i=0; i<4; i++){
+                for(j=1; j<13; j++){
+
+                    if(j == 1) cardeck.push(cardShape[i]+"A");
+                    else if( j == 11) cardeck.push(cardShape[i]+"Q");
+                    else if( j == 12) cardeck.push(cardShape[i]+"K");
+                    else if( j == 13) cardeck.push(cardShape[i]+"J");
+                    else cardeck.push(cardShape[i]+j);
+
+                }
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+    <button type="button" onclick="cardMake()">카드정리</button>
+    <button type="button" onclick="gamestart()">게임시작</button>
+    <button type="button" onclick="call()">콜</button>
+
+</body>
+</html>
