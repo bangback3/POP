@@ -19,27 +19,29 @@
 		</style>
 		<script>
 			$(document).ready(function(){
-				var input = $('#input');
-				var select = input.children('.css_prop');
-				var inputText = input.children('.css_prop_value');
-				var button = input.children('.button');
-				var contents = $('#el');
-				
-				select.change(function(){
-					var cssTypeName = $(this).val();
-					if(cssTypeName != ''){
-						inputText.val(contents.css(cssTypeName));
-					}
-				});
-				
-				button.click(function(){
-					var cssTypeName = select.val();
-					contents.css(cssTypeName, inputText.val());
-				});
+				var prop_val;
+				//선택박스 이벤트(선택박스)정의
+			var selectEvent = function(){
+				prop_val = $(this).val();//지역변수인 prop을 글로벌화 시켜 위에
+										//남겨주므로써 css에 적용할수있게되었다
+				var css_val = $('#el').css(prop_val);
+				$('.css_prop_value').val(css_val);
+				//$('.css_prop_value').attr('value',css_val)
+			}
+				//클릭이벤트(적용버튼)정의
+				var comfirm = function(){
+					var css_val = $('.css_prop_value').val();
+					$('#el').css(prop_val,css_val);
+				}
+				//이벤트실행
+				$('select.css_prop').change(selectEvent)
+				$('.button').click(comfirm);
+
+
 			});
 		</script>
 	</head>
-	
+
 	<body>
 		<div id="wrapper">
 			<div id="controller">
