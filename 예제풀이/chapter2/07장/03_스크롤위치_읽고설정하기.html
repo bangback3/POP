@@ -6,37 +6,28 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>03_스크롤위치_읽고설정하기</title>
 		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-		<style>
-			* { margin:0; padding:0; }
-			#wrapper { width:2000px; height:2000px; padding:30px; }
-			#info { position:fixed; }
-			#form { margin-top: 20px;}
-			#form span { color:red; }
-		</style>
 		<script>
 			$(document).ready(function(){
-				var info = $('#info');
-				
-				$(window).on('scroll', function(){
-					var sl = $(window).scrollLeft();
-					var st = $(window).scrollTop();
-					
-					info.children('.scrollLeft').text(sl);
-					info.children('.scrollTop').text(st);
+				var $wrap = $('.wrap');
+				$(window).resize(function(){
+					$('.fly').css('left',$wrap.offset().left+wrap.width()+10)
 				});
-				
-				var form = $('#form');
-				var xField = form.children('.xField');
-				var yField = form.children('.yField');
-				var btn = form.children('.btn');
-				btn.click(function(){
-					$(window).scrollLeft(parseInt(xField.val()));
-					$(window).scrollTop(parseInt(yField.val()));
-				});
+				$(window).scroll(function(){
+					$('.fly').stop().animate({
+					top:$(this).scrollTop()
+				},1000)
+			})
+			$(window).trigger('resize')
 			});
 		</script>
+		<style>
+			* { margin:0; padding:0; }
+			.wrap{width: 800px; height: 2000px; border:1px #00F solid; margin:0 auto;}
+			.fly{width: 80px; height: 200px; border: 1px #00F solid; position:absolute; left:0; top:0}
+		</style>
+
 	</head>
-	
+
 	<body>
 		<div id="wrapper">
 			<div id="info">

@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
@@ -15,7 +15,7 @@
 		<script>
 			$(document).ready(function(){
 				var box = $('#wrapper');
-				$(window).resize(function(){
+				//$('wrapper').text(box.width())
 					$('#width').text(box.width());
 					$('#height').text(box.height());
 					$('#innerWidth').text(box.innerWidth());
@@ -23,12 +23,12 @@
 					$('#outerWidth').text(box.outerWidth(true));
 					$('#outerHeight').text(box.outerHeight(true));
 				});
-				
+
 				$(window).trigger('resize');
 			});
 		</script>
 	</head>
-	
+
 	<body>
 		<span>브라우저 창의 크기를 변경해 보고 박스의 크기가 각 메서드에 따라 어떻게 다른지 확인해 보세요.</span>
 		<div id="wrapper">
