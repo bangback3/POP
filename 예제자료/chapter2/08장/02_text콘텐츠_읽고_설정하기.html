@@ -14,12 +14,16 @@
 			#copy { border:1px solid blue; padding:20px; margin:20px;}
 		</style>
 		<script>
+			// $(document).ready(function(){
+			// 	$('#wrapper').text($('#copy ul li').text())
+			// });
+
 			$(document).ready(function(){
-				
-			});
+				$('#wrapper').text($('#copy').text())
+			})
 		</script>
 	</head>
-	
+
 	<body>
 		<span>아래 li엘리먼트안의 글자를 읽어서 위의 글자를 바꿔주세요.</span>
 		<div id="wrapper">

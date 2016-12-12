@@ -14,11 +14,12 @@
 		</style>
 		<script>
 			$(document).ready(function(){
-				
+				var el = $('#wrapper > ul > li:eq(2)')
+				el.wrap('<div id="wrap">')
 			});
 		</script>
 	</head>
-	
+
 	<body>
 		<span>3번의 자식 엘리먼트를 id가 wrap인 div엘리먼트로 감싸주세요.</span>
 		<div id="wrapper">

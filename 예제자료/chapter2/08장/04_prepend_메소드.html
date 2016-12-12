@@ -13,12 +13,16 @@
 			.newEl { color:red; }
 		</style>
 		<script>
+			// $(document).ready(function(){
+			// 	$('#wrapper > ul > li:eq(2) > ul').prepend('<li class="newEl">3-0</li>')
+			// });
+
 			$(document).ready(function(){
-				
-			});
+				$('#wrapper > ul > li:eq(2) > ul').prepend('')
+			})
 		</script>
 	</head>
-	
+
 	<body>
 		<span>prepend()메서드를 사용하여 표시된 부분 위에 3-0엘리먼트(클래스 newEl을 적용)를 추가시켜 주세요.</span>
 		<div id="wrapper">

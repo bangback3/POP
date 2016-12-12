@@ -14,11 +14,13 @@
 		</style>
 		<script>
 			$(document).ready(function(){
-				
+				var list = $('#list > li:eq(1)')
+				list.empty()
+				// list.text('3-1')
 			});
 		</script>
 	</head>
-	
+
 	<body>
 		<span>empty() 메서드를 이용해 표시된 부분의 먼저 텍스트 컨텐츠를 지우고 맞게 새로 작성해 주세요.</span>
 		<div id="wrapper">
