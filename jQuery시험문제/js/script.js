@@ -65,22 +65,109 @@ var navEvent = { // mouseEvent fuction
 
 var idx = 0;
 var slide = {
+    idx: 0,
+    wrapwidth: $('.slidebanner').width(),
     Event: function() {
         $('.slidebanner .next').click(function() {
-            var move = $('.slidebanner').width()
 
-            $('.slidebanner ul li').eq(idx)
+            $('.slidebanner ul li').eq(slide.idx)
                 .find('img')
                 .animate({
-                    'left': -move
-                }, 1000).parent().next().find('img').css({
+                    'left': -wrapwidth.move
+                }, 1000).parent().removeClass().next().addClass('on').find('img').css({
                     'left': move,
                     'display': 'block'
                 }).animate({
                     'left': 0
                 }, 1000)
+
             idx++
+
+            if (idx == $('.slidebanner ul li').length) {
+                console.log('asd')
+                idx = 0
+                $('.slidebanner ul li').eq(idx).addClass('on').find('img').css({
+                    'left': move,
+                    'display': 'block'
+                }).animate({
+                    'left': 0
+                }, 1000)
+            }
         })
+
+
+        $('.slidebanner .prev').click(function() {
+
+            var move = $('.slidebanner').width()
+
+            $('.slidebanner ul li').eq(idx)
+                .find('img')
+                .animate({
+                    'left': move
+                }, 1000).parent().removeClass().prev().addClass('on').find('img').css({
+                    'left': -move,
+                    'display': 'block'
+                }).animate({
+                    'left': 0
+                }, 1000)
+            idx--
+            if (idx < 0) {
+                idx = $('.slidebanner ul li').length - 1
+                $('.slidebanner ul li').eq(idx).addClass('on').find('img').css({
+                    'left': -move,
+                    'display': 'block'
+                }).animate({
+                    'left': 0
+                }, 1000)
+            }
+        })
+
+
+        $('.slidebanner li a').click(function() {
+            var move = $('.slidebanner').width()
+            var hisnum = $('.slidebanner li.on').index();
+            idx = $(this).parent().index();
+
+            if (idx > hisnum) {
+
+                $('.slidebanner li').eq(hisnum).find('img').css({
+                    left: 0,
+                    'display': 'block'
+                }).animate({
+                    left: -move
+                })
+
+                $('.slidebanner li').eq(idx).addClass('on').find('img').css({
+                    left: move,
+                    'display': 'block'
+                }).animate({
+                    left: 0
+                }).parent().siblings().removeClass()
+
+
+            } else if (idx > hisnum) {
+
+                $('.slidebanner li').eq(hisnum).find('img').css({
+                    left: 0,
+                    'display': 'block'
+                }).animate({
+                    left: -move
+                })
+
+                $('.slidebanner li').eq(idx).addClass('on').find('img').css({
+                    left: move,
+                    'display': 'block'
+                }).animate({
+                    left: 0
+                }).parent().siblings().removeClass()
+
+
+            }
+
+
+        })
+
+
     }
 
 }
