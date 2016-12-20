@@ -61,11 +61,13 @@ var navEvent = { // mouseEvent fuction
         })
     }
 }
-var idx = 0
-var move = $('.slidebanner').width()
+
+
+var idx = 0;
 var slide = {
     Event: function() {
         $('.slidebanner .next').click(function() {
+            var move = $('.slidebanner').width()
 
             $('.slidebanner ul li').eq(idx)
                 .find('img')
@@ -79,30 +81,13 @@ var slide = {
                 }, 1000)
             idx++
         })
-
-        $('.slidebanner .prev').click(function() {
-
-            $('.slidebanner ul li').eq(idx)
-                .find('img')
-                .animate({
-                    'left': move
-                }, 1000).parent().next().find('img').css({
-                    'left': -move,
-                    'display': 'block'
-                }).animate({
-                    'left': 0
-                }, 1000)
-            idx--
-        })
     }
+
 }
 
 
 
-
-
-
-
+//오예!!
 //문서 준비
 $(function() {
     //mouseEvent
