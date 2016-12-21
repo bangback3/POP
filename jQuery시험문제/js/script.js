@@ -112,7 +112,7 @@ var slide = {
                 }, 1000)
             idx--
             if (idx < 0) {
-                idx = $('.slidebanner ul li').length - 1
+                idx = $('.slidebanner ul li').length -1
                 $('.slidebanner ul li').eq(idx).addClass('on').find('img').css({
                     'left': -move,
                     'display': 'block'
@@ -172,6 +172,27 @@ var slide = {
 
 }
 
+$(function() {
+    var fidx;
+    $('.fadebanner li a').click(function(){
+
+        idx = $(this).parent().index();
+        $('.fadebanner li.on').removeClass().find('img').fadeOut(4500);
+        $('.fadebanner li').eq(idx).addClass('on').find('img').fadeIn();
+
+        return false
+    })
+})
+$(function(){
+    var inter;
+    $('.fadebanner li a')
+})
+
+$('.movie-view li a').click(function(){
+
+    var movecode = $(this).attr('href');
+    var url = "https://www.youtube.com/embed/"+mo+"?rel=0&amp;controls=0&amp;showinfo=0"
+})
 
 
 //오예!!
@@ -180,4 +201,5 @@ $(function() {
     //mouseEvent
     navEvent.mouse()
     slide.Event()
+
 })
