@@ -73,7 +73,7 @@ var slide = {
             $('.slidebanner ul li').eq(slide.idx)
                 .find('img')
                 .animate({
-                    'left': -wrapwidth.move
+                    'left': -move
                 }, 1000).parent().removeClass().next().addClass('on').find('img').css({
                     'left': move,
                     'display': 'block'
