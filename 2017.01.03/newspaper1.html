@@ -24,12 +24,44 @@
 
         .contents{
             height: 380px;
-            margin: 20px;
+            margin: 30px;
         }
+
         .contents>.left{
             width: 533px;
             height: 100%;
+            float: left;
         }
+
+        .contents>.left>.up{
+            height: 152px;
+
+        }
+
+        .contents>.left>.down{
+            height: 228px;
+        }
+
+        .contents>.left>.down>.title1{
+            width: 162px;
+            height: 228px;
+            float: left;
+        }
+        .contents>.left>.down>.title1>.title2{
+            height: 50%;
+        }
+
+        .contents>.right{
+            width: 307px;
+            height: 100%;
+            float: right;
+        }
+        .contents>.right>.up{
+            height: 30%;
+        }
+
+
+
 
     </style>
 
@@ -43,7 +75,20 @@
         </div>
 
         <div class="contents guid-line">
-            <div class="left guid-line"></div>
+            <div class="right guid-line">
+                <div class="up guid-line">
+
+                </div>
+            </div>
+            <div class="left guid-line">
+                <div class="up guid-line"></div>
+                <div class="down guid-line">
+                    <div class="title1 guid-line">
+                        <div class="title2 guid-line"></div>
+                        <div class="title3 guid-line"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
