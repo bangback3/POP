@@ -8,6 +8,8 @@
 
     <style>
         *{padding: 0; margin:0;}
+        ul,li{list-style: none;}
+
 
         .guid-line{outline:1px #00F solid;}
 
@@ -38,6 +40,32 @@
         .base>.heading>.banner{
             margin-top: 21px;
         }
+        .base>.heading>.button>.button1{
+            width: 66px;
+        }
+
+        .base>.heading>.button>.button2{
+            width: 80px;
+            position:relative;
+            left: 65px;
+            bottom: 23px;
+
+        }
+
+        .base>.heading>.button>.button3{
+            width: 30px;
+            position:relative;
+            left: 145px;
+            bottom: 46px;
+
+        }
+        .base>.heading>p{
+            font-size: 13px;
+            position: relative;
+            left: 200px;
+            bottom:20px;
+
+        }
 
 
         .contents{
@@ -53,8 +81,27 @@
 
         .contents>.left>.up{
             height: 152px;
-
+            background-image: url(../img/samsung.jpg);
+            background-repeat: no-repeat;
+            background-size: 160px 94px;
+            background-position: bottom left;
         }
+
+        .contents>.left>.up>.middlename{
+            color: rgb(255, 8, 131);
+        }
+
+        .contents>.left>.up>.sub{
+            float: right;
+
+            margin-top: 5px;
+        }
+        .contents>.left>.up>
+
+
+
+
+
 
         .contents>.left>.down{
             height: 228px;
@@ -91,7 +138,12 @@
         <div class="heading guid-line">
             <h1><img src="../img/news1.gif" alt=""></h1>
             <div class="banner"><img src="../img/news2.jpg" alt=""></div>
-            <div class="button guid-line"></div>
+            <div class="button guid-line">
+                <div class="button1 guid-line"><img src="../img/news3.jpg" alt=""></div>
+                <div class="button2 guid-line"><img src="../img/news4.png" alt=""></div>
+                <div class="button3 guid-line"><img src="../img/news5.png" alt=""></div>
+            </div>
+            <p>01-05 09:23편집</p>
         </div>
 
         <div class="contents guid-line">
@@ -101,7 +153,17 @@
                 </div>
             </div>
             <div class="left guid-line">
-                <div class="up guid-line"></div>
+                <div class="up guid-line">
+                    <h2 class="middlename">갤S8,4월 출시...초도생산량 1000만대</h2>
+                    <ul class="sub">
+                        <ul  class="sub2"><li>삼성전자가 전략 스마트폰 '갤럭시S8(가칭)' 초도 생산량을<br/>
+                        1000만대로 확정했다. 2월 부품 조달, 3월 양산, 4월 출시로<br/>
+                        이어지는 생산 일정도 결정했다. 4일 업계에 따르면...</li></ul>
+                        <li>삼성전자, 9일부터 갤러시노트7 충전 15% 제한...회수율 94%</li>
+                        <li>삼성, '1600만 화소 셀카' 갤럭시A로 새해 '셀피 전쟁' 포문</li>
+                    </ul>
+
+                </div>
                 <div class="down guid-line">
                     <div class="title1 guid-line">
                         <div class="title2 guid-line"></div>
