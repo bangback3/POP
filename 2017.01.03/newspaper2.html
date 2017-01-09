@@ -21,18 +21,77 @@
       height: 111px;
       margin: 0 30px;
     }
-    .menu{
+    .base>.heading>.banner1>img{
+        float: left;
+    }
+    .base>.heading>.banner2>img{
+        float: right;
+        margin-top: 50px;
+    }
+
+    .base>.heading>.menu{
       width: 840px;
       height: 25px;
       position: relative;
       top: 87px;
     }
+    .base>.heading>.menu>p{
+        font-size: 13px;
+        position: relative;
+        right: 70px;
+        bottom: 20px;
+
+    }
+
+    .base>.heading>.menu>.button{
+        width: 176px;
+        height: 24px;
+    }
+    .base>.heading>.menu>.button>.button1{
+        width: 66px;
+        height: 22px;
+        margin: 0;
+        background-image: url(../image/botton1.png);
+        background-repeat: no-repeat;
+
+    }
+    .base>.heading>.menu>.button>.button2{
+        width: 75px;
+        height: 22px;
+        position: relative;
+        left: 69px;
+        bottom: 22px;
+        background-image: url(../image/botton2.png);
+        background-repeat: no-repeat;
+    }
+    .base>.heading>.menu>.button>.button3{
+        width: 28px;
+        height: 22px;
+        position: relative;
+        left: 147px;
+        bottom: 43px;
+        background-image: url(../image/botton3.png);
+        background-repeat: no-repeat;
+    }
+
     .in{
       width: 176px;
     }
-    .contents{
+    .base>.contents{
       height: 380px;
       margin: 30px;
+    }
+
+    .base>.contents>.left>.title1>p{
+        font-size: 13px;
+        font-weight: bolder;
+        color: rgb(8, 137, 0);
+    }
+
+    .base>.contents>.right>.title3>p{
+        font-size: 12px;
+        font-weight: bolder;
+        color: rgb(8, 137, 0);
     }
 
     .left{
@@ -134,17 +193,61 @@
     .sub1{
       height: 194px;
     }
+
+    .base>.contents>.right>.sub1>.a,
+    .base>.contents>.right>.sub1>.b,
+    .base>.contents>.right>.sub1>.c,
+    .base>.contents>.right>.sub1>.d,
+    .base>.contents>.right>.sub1>.e
+    {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+    .base>.contents>.right>.sub1>.a,
+    .base>.contents>.right>.sub1>.c,
+    .base>.contents>.right>.sub1>.e
+    {
+        font-weight: bolder;
+    }
+
+    .base>.contents>.right>.sub2>img{
+        width: 55px;
+        height: 55px;
+        margin-right: 4px
+    }
+
+    .base>.contents>.right>.sub3>.mini1>.name1>h4{
+        font-size: 13px;
+    }
+    .base>.contents>.right>.sub3>.mini2>.name3>h4{
+        font-size: 13px;
+    }
+    .base>.contents>.right>.sub3>.mini1>.name2{
+        background-image: url(../image/009.jpg);
+        background-repeat: no-repeat;
+        background-size: 90px 70px;
+        background-position: top;
+    }
+
+    .base>.contents>.right>.sub3>.mini2>.name4{
+        background-image: url(../image/bg-video-play.png);
+        background-repeat: no-repeat;
+        background-size: 90px 70px;
+        background-position: top;
+    }
+
+
     .sub2{
       height: 55px;
       margin: 2px 0;
     }
     .sub3{
-      height: 111px;
+      height: 105px;
     }
 
     .mini1{
       width: 90px;
-      height: 111px;
+      height: 105px;
       float: left;
     }
     .name1{
@@ -152,11 +255,11 @@
       margin: 5px 0;
     }
     .name2{
-      height: 87px;
+      height: 83px;
     }
     .mini2{
       width: 90px;
-      height: 111px;
+      height: 105px;
       float: right;
     }
     .name3{
@@ -164,7 +267,7 @@
       margin: 5px 0;
     }
     .name4{
-      height: 87px;
+      height: 83px;
     }
 
   </style>
@@ -172,11 +275,20 @@
 <body>
   <div class="base guid-line">
       <div class="heading guid-line">
-          <div class="menu guid-line"></div>
+          <div class="banner1"><img src="../image/baner1.png" alt=""></div>
+          <div class="banner2"><img src="../image/baner2.jpg" alt=""></div>
+          <div class="menu guid-line">
+              <div class="button guid-line">
+                  <div class="button1 guid-line"></div>
+                  <div class="button2 guid-line"></div>
+                  <div class="button3 guid-line"></div>
+              </div>
+              <p>01-09 09:38편집</p>
+          </div>
       </div>
       <div class="contents guid-line">
             <div class="left guid-line">
-                <div class="title1 guid-line"></div>
+                <div class="title1 guid-line"><p>반칙없는뉴스</p></div>
                 <div class="title2 guid-line">
                       <div class="up guid-line">
                           <div class="picture_left guid-line"></div>
@@ -194,16 +306,28 @@
                 </div>
             </div>
             <div class="right guid-line">
-                  <div class="title3 guid-line"></div>
-                  <div class="sub1 guid-line"></div>
-                  <div class="sub2 guid-line"></div>
+                  <div class="title3 guid-line"><p>주요뉴스</p></div>
+                  <div class="sub1 guid-line">
+
+                          <p class="a">조원동 "청와대서 버튼 누르면 일파만파”</p>
+                          <p class="b">북한 외무성, ICBM 조만간 발사 시사</p>
+                          <p class="c">경찰 “청와대 인사 비밀노트, 감찰 고려”</p>
+                          <p class="d">인명진 "인적청산, 국민이 됐다 할 때까지"</p>
+                          <p class="e">[단독] 경기부양 총력, 산은 62.5조 푼다</p>
+
+                  </div>
+                  <div class="sub2 guid-line">
+                      <img src="../image/008.jpg" alt="">
+                      <p class="write1">이 원의 시 한송이</p>
+                      <p class="write2">목련</p>
+                  </div>
                   <div class="sub3 guid-line">
                       <div class="mini1 guid-line">
-                          <div class="name1 guid-line"></div>
+                          <div class="name1 guid-line"><h4>한국만평</h4></div>
                           <div class="name2 guid-line"></div>
                       </div>
                       <div class="mini2 guid-line">
-                        <div class="name3 guid-line"></div>
+                        <div class="name3 guid-line"><h4>믿보동</h4></div>
                         <div class="name4 guid-line"></div>
                       </div>
                   </div>
