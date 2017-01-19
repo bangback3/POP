@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <style>
+
+        *{margin: 0; padding: 0;}
         body{
-            background-color: #000;
+            background-color: #FFF;
+
         }
         .main{
 
@@ -16,42 +20,59 @@
             margin: 100px auto;
         }
         .main>h1{
-            width: 320px;
-            height: 45px;
+            width: 149px;
+            height: 60px;
             margin: 0 auto;
-            color: #FFF;
+            color: #000;
+            font-size: 40px;
         }
         fieldset{
             width: 900px;
             height: 100%;
             margin: 0 auto;
-            border: 1px #000 solid;
-            border-top: 3px #FFF solid;
+            border: 1px #FFF solid;
+            border-top: 3px #000 solid;
         }
 
         table{
-            border: 1px #000 solid;
+            border: 1px #FFF solid;
             border-collapse: collapse;
             margin-top: 100px;
         }
         th{
-            border-right: 1px #FFF solid;
+            border-right: 1px #000 solid;
+            text-align: center;
             height: 80px;
-            color: #FFF;
+            color: #000;
             font-size: 20px;
         }
         td{
             padding-left:50px;
-            color: #FFF;
+            color: #000;
         }
         #birth{
             margin-left: 2px;
         }
+        .button{
+            width: 250px;
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+        .form-control{
+            width: auto;
+            float: left;
+        }
+
     </style>
 </head>
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-    <div class="main"><h1>우리집 회원가입 양식</h1></div>
+    <script src="js/bootstrap.min.js"></script>
+
+    <div class="main"><h1>Sign up</h1></div>
 
     <fieldset>
 
@@ -72,7 +93,9 @@
                 <tr>
                     <th><label for="username">Id</label></th>
                     <td><input id="username" type="text" />
-                        <input type="button" value="Review" />
+                        <!-- <input type="button" value="Review" /> -->
+                        <input class="btn btn-default" type="button" value="Review">
+
                     </td>
                 </tr>
             </tbody>
@@ -190,11 +213,18 @@
             </tbody>
         </table>
     </fieldset>
-    <p>
+    <!-- <p class="button">
         <input type="button" name="" value="취소" />
         <input type="reset" name="name" value="초기화" />
         <input type="submit" name="name" value="전송" />
-    </p>
+    </p> -->
+<p class="button">
+
+    <button class="btn btn-default" type="submit">Button</button>
+    <input class="btn btn-default" type="button" value="Input">
+    <input class="btn btn-default" type="submit" value="Submit">
+</p>
+
 
 </body>
 </html>
