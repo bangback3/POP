@@ -11,6 +11,8 @@
 .left{width: 513px; height: 100%; margin-right:20px; float: left;}
 .right{width: 307px; height: 100%; float: right;}
 .left_up{width: 100%; height: 132px; margin-bottom: 10px;}
+.left_up>img{display: inline-block; width: 160px; height: 94px;}
+h2{display: inline-block; width: 513px; height: 32px; font-size: 23px;}
 .left_down{width: 100%; height: 238px;}
 .left_sub1{width: 162px; height: 220px; padding: 9px 0; float: left;}
 .small1,.small2{width: 100%; height: 110px;}
@@ -18,6 +20,7 @@
 .small2>img{display: inline-block; width: 126px; height: 78px; margin: 0 18px;}
 .left_sub2{width: 351px; height: 100%; float: right;}
 .right_up{width: 100%; height: 115px; margin-bottom: 9px;}
+.issue>img{display: inline-block;}
 .right_down{width: 100%; height: 255px;}
 .right_sub1{width: 146px; height: 100%; float: left;}
 .right_sub2{width: 146px; height: 100%; float: right;}
