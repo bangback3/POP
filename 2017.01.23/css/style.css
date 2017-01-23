@@ -23,3 +23,5 @@
 .right_sub2{width: 146px; height: 100%; float: right;}
 .pic1,.pic2{width: 100%; height: 50%;}
 .pic3,.pic4{width: 100%; height: 50%;}
+.pic1>img,.pic2>img{display: inline-block; width: 146px; height: 95px;}
+.pic3>img,.pic4>img{display: inline-block; width: 146px; height: 95px;}
