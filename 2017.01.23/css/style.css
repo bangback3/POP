@@ -13,8 +13,14 @@
 .left_up{width: 100%; height: 132px; margin-bottom: 10px;}
 .left_up>img{display:block; width: 160px; height: 94px; float: left;}
 h2{display:block; width: 513px; height: 32px; font-size: 23px; color: #FF1493;}
-p{display:block; width: 336px; height: 54px; font-size: 12px; float: right;}
-.issue_assay{display:block; list-style: none; width: 513px; height: 36px; font-size: 12px; clear: right;}
+p{display:block; width: 336px; height: 54px; font-size: 13px; float: right; margin: 3px 0 5px;}
+.issue_assay{display:inline-block; list-style: none; width: 336px; height: 36px; font-size: 12px; clear: right;
+             margin-left: 15px;}
+.issue_assay>li{background-image: url(../img/botton4.png);
+                background-repeat: no-repeat;
+                background-position: left;
+                padding-left: 8px;
+                overflow: hidden;}
 .left_down{width: 100%; height: 238px;}
 .left_sub1{width: 162px; height: 220px; padding: 9px 0; float: left;}
 .small1,.small2{width: 100%; height: 110px;}
@@ -32,6 +38,7 @@ h3{display: inline-block; font-size: 10px; width: 123px; height: 33px; margin: 0
                 background-repeat: no-repeat;
                 background-position: left;
                 padding-left: 8px;}
+.issue_color{color:#FF1493; font-weight: bold;}
 .right_down{width: 100%; height: 255px;}
 .right_sub1{width: 146px; height: 100%; float: left;}
 .right_sub2{width: 146px; height: 100%; float: right;}
