@@ -27,6 +27,11 @@ h3{display: inline-block; font-size: 10px; width: 123px; height: 33px; margin: 0
 .left_title1,.left_title2{font-weight: bold; color: #FF1493;}
 .right_up{width: 100%; height: 115px; margin-bottom: 9px;}
 .issue>img{display: inline-block;}
+.issue_main{display: block; font-size: 12px; list-style: none; padding: 12px 16px;}
+.issue_main>li{background-image: url(../img/button5.gif);
+                background-repeat: no-repeat;
+                background-position: left;
+                padding-left: 8px;}
 .right_down{width: 100%; height: 255px;}
 .right_sub1{width: 146px; height: 100%; float: left;}
 .right_sub2{width: 146px; height: 100%; float: right;}
@@ -34,4 +39,5 @@ h3{display: inline-block; font-size: 10px; width: 123px; height: 33px; margin: 0
 .pic3,.pic4{width: 100%; height: 50%;}
 .pic1>img,.pic2>img{display: inline-block; width: 146px; height: 95px;}
 .pic3>img,.pic4>img{display: inline-block; width: 146px; height: 95px;}
-a{display: inline-block; width: 141px; height: 25px; font-style: normal; font-size: 11px; margin: 0 3px; color: #000;}
+a{display: inline-block; width: 141px; height: 25px; font-style: normal;
+  font-size: 11px; text-decoration: none; margin: 0 3px; color: #000;}
