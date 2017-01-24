@@ -11,14 +11,20 @@
 .left{width: 513px; height: 100%; margin-right:20px; float: left;}
 .right{width: 307px; height: 100%; float: right;}
 .left_up{width: 100%; height: 132px; margin-bottom: 10px;}
-.left_up>img{display: inline-block; width: 160px; height: 94px;}
-h2{display: inline-block; width: 513px; height: 32px; font-size: 23px;}
+.left_up>img{display:block; width: 160px; height: 94px; float: left;}
+h2{display:block; width: 513px; height: 32px; font-size: 23px; color: #FF1493;}
+p{display:block; width: 336px; height: 54px; font-size: 12px; float: right;}
+.issue_assay{display:block; list-style: none; width: 513px; height: 36px; font-size: 12px; clear: right;}
 .left_down{width: 100%; height: 238px;}
 .left_sub1{width: 162px; height: 220px; padding: 9px 0; float: left;}
 .small1,.small2{width: 100%; height: 110px;}
 .small1>img{display: inline-block; width: 126px; height: 78px; margin: 0 18px;}
 .small2>img{display: inline-block; width: 126px; height: 78px; margin: 0 18px;}
+h3{display: inline-block; font-size: 10px; width: 123px; height: 33px; margin: 0 18px; font-weight: normal;}
 .left_sub2{width: 351px; height: 100%; float: right;}
+.left_main{display: inline-block; padding-top: 8px; list-style: none; font-size: 15px;}
+.left_main>li{width: 332px; height: 26px; overflow: hidden; text-overflow: ellipsis; white-space:nowrap; }
+.left_title1,.left_title2{font-weight: bold; color: #FF1493;}
 .right_up{width: 100%; height: 115px; margin-bottom: 9px;}
 .issue>img{display: inline-block;}
 .right_down{width: 100%; height: 255px;}
@@ -28,3 +34,4 @@ h2{display: inline-block; width: 513px; height: 32px; font-size: 23px;}
 .pic3,.pic4{width: 100%; height: 50%;}
 .pic1>img,.pic2>img{display: inline-block; width: 146px; height: 95px;}
 .pic3>img,.pic4>img{display: inline-block; width: 146px; height: 95px;}
+a{display: inline-block; width: 141px; height: 25px; font-style: normal; font-size: 11px; margin: 0 3px; color: #000;}
