@@ -1,0 +1,49 @@
+*{margin: 0; padding: 0;}
+.guid-line{outline: 1px #00F solid;}
+
+.base{
+  width: 900px;
+  height: 540px;
+  margin: 150px auto;
+}
+.heading{
+  width: 840px;
+  height: 111px;
+  margin: 0 30px;
+}
+.contents{
+  width: 840px;
+  height: 380px;
+  margin: 20px 30px;
+}
+.main{
+  width: 477px;
+  height: 380px;
+  float: left;
+}
+.headline{
+  width: 476px;
+  height: 167px;
+}
+.bottomline{
+  width: 476px;
+  height: 213px;
+}
+.secondary{
+  width: 363px;
+  height: 377px;
+  float: right;
+}
+.today-colum{
+  width: 363px;
+  height: 135px;
+}
+.celebrity{
+  width: 363px;
+  height: 130px;
+  margin-bottom: 8px;
+}
+.phototype{
+  width: 363px;
+  height: 104px;
+}
