@@ -6,6 +6,9 @@ ul,li{list-style: none;}
   width: 900px;
   height: 540px;
   margin: 150px auto;
+  background-image: url(../img/bg_panel.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .heading{
   width: 840px;
@@ -31,15 +34,63 @@ ul,li{list-style: none;}
   height: 167px;
 }
 .headline ul>li{
-  display: inline-block;
+  display:inline-block;
+  font-size: 13px;
+
 }
-.headline ul>li~li{
+.headline ul>li:first-child{
   float: left;
+  margin: 5px 15px 0 0;
+}
+.headline ul>li:first-child~li{
+  width: 265px;
+  height: 18px;
+  padding-top: 6px;
+}
+.headline ul>li>a{
+  text-decoration: none;
+  font-weight: bold;
+
+}
+.headline ul>li>a:first-child+a+a{
+  color: #c4865a;
 }
 
 .bottomline{
   width: 476px;
   height: 213px;
+}
+.lc{
+  width: 108px;
+  height: 204px;
+  float: left;
+  padding: 9px 0 0 16px;
+}
+.lc ul>li{
+  display:inline-block;
+
+}
+.lc ul>li>a{
+  text-decoration: none;
+  font-size: 12px;
+}
+.rc{
+  width: 336px;
+  height: 203px;
+  padding-top: 4px;
+  float: right;
+}
+.rc ul>li{
+  display: block;
+  width: 336px;
+  height: 23px;
+  padding-top: 6px;
+  overflow: hidden;
+  line-height: 23px;
+}
+.rc ul>li>a{
+  text-decoration: none;
+  font-size: 15px;
 }
 .secondary{
   width: 363px;
@@ -47,15 +98,27 @@ ul,li{list-style: none;}
   float: right;
 }
 .today-colum{
-  width: 363px;
-  height: 135px;
+  width: 343px;
+  height: 134px;
+  padding-left: 20px;
 }
+.today-colum ul>li{
+  display:block;
+  
+}
+
+.today-colum ul>li>ul{
+  font-size: 11px;
+}
+
 .celebrity{
-  width: 363px;
-  height: 130px;
+  width: 343px;
+  height: 111px;
   margin-bottom: 8px;
+  padding: 19px 0 0 20px;
 }
 .phototype{
-  width: 363px;
+  width: 343px;
   height: 104px;
+  padding-left: 20px;
 }
