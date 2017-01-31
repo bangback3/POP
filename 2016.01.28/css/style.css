@@ -2,6 +2,9 @@
 ul,li{list-style: none;}
 .guid-line{outline: 1px #00F solid;}
 
+body{
+  background-image: url(../img/bg_bd.png);
+}
 .base{
   width: 900px;
   height: 540px;
@@ -36,7 +39,6 @@ ul,li{list-style: none;}
 .headline ul>li{
   display:inline-block;
   font-size: 13px;
-
 }
 .headline ul>li:first-child{
   float: left;
@@ -104,9 +106,13 @@ ul,li{list-style: none;}
 }
 .today-colum ul>li{
   display:block;
-  
 }
-
+.today-colum ul>.first{
+  float: left;
+}
+.today-colum ul>.second{
+  float: right;
+}
 .today-colum ul>li>ul{
   font-size: 11px;
 }
@@ -117,8 +123,52 @@ ul,li{list-style: none;}
   margin-bottom: 8px;
   padding: 19px 0 0 20px;
 }
+.celebrity ul>li{
+  display: block;
+  font-size: 12px;
+}
+.celebrity ul>li>a{
+  text-decoration: none;
+  color: #000;
+}
+.celebrity ul>li:first-child{
+  float: right;
+}
+.celebrity ul>li:first-child~li{
+  width: 189px;
+  height: 18px;
+  margin-bottom: 3px;
+}
 .phototype{
   width: 343px;
   height: 104px;
   padding-left: 20px;
+}
+.phototype ul>li>a{
+  display: block;
+  width: 103px;
+  height: 104px;
+  font-size: 11px;
+  text-align: center;
+}
+.phototype ul>li>a:link{
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+.phototype ul>li>a:hover{
+  text-decoration: underline;
+  color: orange;
+}
+.phototype ul>li:first-child{
+  float: left;
+}
+.phototype ul>li:first-child~li{
+  margin-left: 17px;
+}
+.phototype ul>li:first-child+li{
+  float: left;
+}
+.phototype ul>li:first-child+li+li{
+  float: left;
 }
