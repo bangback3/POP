@@ -134,7 +134,7 @@ body{
   font-size: 11px;
   text-align: center;
   color: #737475;
-  
+
 }
 .lc ul>li:first-child+li>a>span:hover,
 .lc ul>li:first-child+li+li+li>a>span:hover{
@@ -198,7 +198,7 @@ body{
 }
 .today-colum ul>.fc>ul,
 .today-colum ul>.sc>ul{
-  margin-top: 5px;
+  margin-top: 8px;
   font-size: 11px;
 }
 .today-colum ul>.fc>ul>li{
