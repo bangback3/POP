@@ -1,6 +1,6 @@
 *{margin: 0; padding: 0;}
 ul,li{list-style: none;}
-.guid-line{outline: 1px #00F solid;}
+/*.guid-line{outline: 1px #00F solid;}*/
 
 body{
   background-image: url(../img/bg_bd.png);
@@ -17,10 +17,51 @@ body{
   width: 840px;
   height: 111px;
   margin: 0 30px;
+  border-bottom: 3px #545454 solid;
 }
+.heading>a{
+  display: block;
+}
+.heading>a:first-child{
+  float: left;
+}
+.heading>a:first-child+a{
+  float: right;
+}
+.heading>a:first-child,
+.heading>a:first-child+a{
+  margin-top: 25px;
+}
+
 .button{
   width: 277px;
   height: 24px;
+  clear: left;
+}
+.button>.button-group>button{
+  border:0 none;
+  padding:0;
+  margin:0;
+  background:transparent;
+  overflow:visible;
+  cursor:pointer;
+}
+.button>.button-group {
+  float: left;
+}
+.button>.button-group>a{
+  text-decoration: none;
+}
+.button>.button-group>a>img{
+  width: 75px;
+  height: 22px;
+}
+.button>.date>span{
+  width: 90px;
+  height: 20px;
+  padding-left: 10px;
+  font-size: 11px;
+  text-align: center;
 }
 .contents{
   width: 840px;
@@ -78,9 +119,7 @@ body{
   background-color: #ededed;
   border-right: 1px #d6d6d6 solid;
 }
-.lc ul>li{
-  display:inline-block;
-}
+
 .lc ul>li>a{
   text-decoration: none;
   font-size: 12px;
@@ -91,10 +130,11 @@ body{
 {
   width: 95px;
   height: 14px;
-  display:inline-block;
+  display:block;
   font-size: 11px;
   text-align: center;
   color: #737475;
+  
 }
 .lc ul>li:first-child+li>a>span:hover,
 .lc ul>li:first-child+li+li+li>a>span:hover{
