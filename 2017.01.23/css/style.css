@@ -1,5 +1,5 @@
 *{margin: 0; padding: 0;}
-/*.guid-line{outline: 1px #00F solid;}*/
+.guid-line{outline: 1px #00F solid;}
 
 .base{width: 900px; height: 540px; margin: 10px auto;}
 .heading{width: 840px; height: 111px; margin: 0 30px;
@@ -27,7 +27,7 @@
 h2{display:block; width: 513px; height: 32px; font-size: 23px; color: #FF1493;}
 p{display:block; width: 336px; height: 54px; font-size: 13px; float: right; margin: 3px 0 5px;}
 .issue_assay{display:inline-block; list-style: none; width: 336px; height: 36px; font-size: 12px; clear: right;
-             margin-left: 15px;}
+             margin-left: 15px; font-weight: bold;}
 .issue_assay>li{background-image: url(../img/botton4.png);
                 background-repeat: no-repeat;
                 background-position: left;

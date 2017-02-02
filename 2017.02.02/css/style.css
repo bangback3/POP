@@ -1,0 +1,99 @@
+*{margin: 0; padding: 0;}
+ul,li{list-style: none;}
+
+.guid-line{outline: 1px #00F solid;}
+
+.login{
+    width: 1920px;
+    height: 30px;
+}
+.base{
+    width: 993px;
+    height: 1475px;
+    margin: 0 auto;
+}
+.headline{
+    width: 993px;
+    height: 160px;
+}
+.contents{
+    width: 993px;
+    height: 1475px;
+}
+.ctmenu{
+    width: 993px;
+    height: 30px;
+}
+.ctmenu ul{
+    display: inline-block;
+}
+.ctmenu ul>li{
+    float: left;
+}
+.right{
+    width: 243px;
+    height: 1445px;
+    float: right;
+}
+.sd_login{
+    width: 243px;
+    height: 415px;
+}
+.sd_news{
+    width: 243px;
+    height: 435px;
+}
+.sd_popularity{
+    width: 243px;
+    height: 435px;
+}
+.left{
+    width: 750px;
+    height: 1445px;
+    float: left;
+}
+.main_ct{
+    width: 755px;
+    height: 350px;
+}
+.main_ct ul>li{
+    display:block;
+}
+.main_ct ul>li:first-child{
+    float: left;
+}
+.main_ct ul>li:first-child~li{
+    float: left;
+    border: 1px #00F solid;
+    width: 330px;
+    height: 75px;
+}
+.main_ct ul>li:first-child+li>a>span{
+    display: inline-block;
+    padding: 13px;
+    font-size: 12px;
+
+}
+.main_ct ul>li:first-child+li>a>img{
+    border: 1px #00F solid;
+    display:block;
+    float: left;
+    font-size: 12px;
+}
+.main_top{
+    width: 750px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.main_top a{
+    display: inline-block;
+}
+
+.lowrank_ct1{
+    width: 750px;
+    height: 435px;
+}
+.lowrank_ct2{
+    width: 750px;
+    height: 435px;
+}
