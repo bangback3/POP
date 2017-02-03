@@ -37,7 +37,96 @@ ul,li{list-style: none;}
 }
 .sd_login{
     width: 243px;
-    height: 415px;
+    height: 350px;
+}
+.login_box{
+    width: 243px;
+    height: 100px;
+    background-color: #f6f6f6;
+}
+.login_box ul>li{
+    display:block;
+}
+.login_box ul>li:first-child~li{
+    float: left;
+}
+.login_box ul>li:first-child+li{
+    margin-left: 10px;
+    width: 55px;
+    height: 25px;
+}
+.login_box ul>li:first-child+li+li{
+    width: 65px;
+    height: 25px;
+    margin-left: 12px;
+}
+.login_box ul>li:first-child+li+li+li{
+    width: 87px;
+    height: 25px;
+}
+.login_box ul>li:first-child{
+    width: 222px;
+    height: 52px;
+    padding: 10px;
+}
+.login_box ul>li:first-child>input:first-child,
+.login_box ul>li:first-child>input:first-child+input
+{
+    width: 150px;
+    height: 25px;
+    display:block;
+    float: left;
+}
+.login_box ul>li:first-child>input:first-child+input+input{
+    width: 63px;
+    height: 58px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.login_box ul>li:first-child~li>span{
+    font-size: 11px;
+    display: inline-block;
+
+}
+.login_box ul>li:first-child+li>span{
+    margin: 0 0 5px 5px;
+}
+.login_box ul>li:first-child+li~li>a{
+    font-size: 11px;
+    display: inline-block;
+
+}
+.login_box ul>li:first-child+li+li>a{
+    margin-right: 5px;
+}
+
+.hot_issue{
+    width: 243px;
+    height: 250px;
+}
+.issue_title{
+    width: 243px;
+    height: 35px;
+}
+.issue_contents{
+    width: 243px;
+    height: 215px;
+}
+.issue_contents>ul>li{
+    display: block;
+    width: 225px;
+    height: 58px;
+    padding: 7px 10px;
+}
+.issue_contents>ul>li>a>span,
+.issue_contents>ul>li>a>img{
+    display:block;
+}
+.issue_contents>ul>li>a>span{
+    float: left;
+}
+.issue_contents>ul>li>a>img{
+    float: right;
 }
 .sd_news{
     width: 243px;
@@ -64,11 +153,16 @@ ul,li{list-style: none;}
 }
 .main_ct ul>li:first-child~li{
     float: right;
-    border: 1px #00F solid;
     width: 330px;
-    height: 75px;
-    margin: 0 2px 3px 0;
+    height: 73px;
+    padding: 2px;
+    margin-right: 10px;
+
 }
+.main_ct ul>li:first-child+li+li{
+    border-bottom: 1px #e1e1e1 solid;
+}
+
 .main_ct ul>li:first-child~li>a>span{
     display: inline-block;
     float: right;
@@ -78,7 +172,7 @@ ul,li{list-style: none;}
     font-size: 12px;
 }
 .main_ct ul>li:first-child~li>a>img{
-    border: 1px #00F solid;
+
     display:inline-block;
     float: left;
     font-size: 12px;
@@ -90,6 +184,9 @@ ul,li{list-style: none;}
 }
 .main_top a{
     display: inline-block;
+}
+.main_top a>img{
+    /*border: 1px #e1e1e1 solid;*/
 }
 
 .lowrank_ct1{
