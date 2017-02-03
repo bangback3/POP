@@ -14,7 +14,35 @@ ul,li{list-style: none;}
 }
 .headline{
     width: 993px;
-    height: 160px;
+    height: 150px;
+}
+.bobea_menu{
+    width: 350px;
+    height: 110px;
+    float: left;
+}
+.search_box{
+    width: 335px;
+    height: 110px;
+    float: left;
+}
+.atbox{
+    width: 306px;
+    height: 110px;
+    float: right;
+    background-image: url(../img/banner/banner3.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+.hlmenu{
+    width: 990px;
+    height: 38px;
+    padding: 0 2px;
+    clear: left;
+}
+.hlmenu>ul>li{
+    display:block;
+    float: left;
 }
 .contents{
     width: 993px;
@@ -22,7 +50,8 @@ ul,li{list-style: none;}
 }
 .ctmenu{
     width: 993px;
-    height: 30px;
+    height: 35px;
+    margin-bottom: 5px;
 }
 .ctmenu ul{
     display: inline-block;
@@ -93,11 +122,16 @@ ul,li{list-style: none;}
 }
 .login_box ul>li:first-child+li~li>a{
     font-size: 11px;
+    text-decoration: none;
+    color: #696a6c;
     display: inline-block;
 
 }
 .login_box ul>li:first-child+li+li>a{
     margin-right: 5px;
+}
+.login_box ul>li:first-child+li+li>a>strong{
+    color: #717076;
 }
 
 .hot_issue{
@@ -124,6 +158,25 @@ ul,li{list-style: none;}
 }
 .issue_contents>ul>li>a>span{
     float: left;
+    width: 130px;
+    height: 34px;
+    font-size: 13px;
+    color: #000;
+    padding-left: 13px;
+    margin-top: 10px;
+    background-image: url(../img/button/headline_number1.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.issue_contents>ul>li:first-child+li>a>span{
+    background-image: url(../img/button/headline_number2.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.issue_contents>ul>li:first-child+li+li>a>span{
+    background-image: url(../img/button/headline_number3.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
 }
 .issue_contents>ul>li>a>img{
     float: right;
@@ -165,11 +218,15 @@ ul,li{list-style: none;}
 
 .main_ct ul>li:first-child~li>a>span{
     display: inline-block;
+    color: #000;
     float: right;
     width: 200px;
     height: 50px;
     padding-top: 12px;
     font-size: 12px;
+}
+.main_ct ul>li:first-child~li>a>span>strong{
+    font-size: 13px;
 }
 .main_ct ul>li:first-child~li>a>img{
 
@@ -185,9 +242,9 @@ ul,li{list-style: none;}
 .main_top a{
     display: inline-block;
 }
-.main_top a>img{
-    /*border: 1px #e1e1e1 solid;*/
-}
+/*.main_top a>img{
+    border: 1px #e1e1e1 solid;
+}*/
 
 .lowrank_ct1{
     width: 750px;
