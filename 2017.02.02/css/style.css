@@ -112,6 +112,7 @@ ul,li{list-style: none;}
     width: 243px;
     height: 350px;
 }
+
 .login_box{
     width: 243px;
     height: 100px;
@@ -233,6 +234,129 @@ ul,li{list-style: none;}
     width: 243px;
     height: 190px;
 }
+.sd_news>.news_title,
+.sd_popularity>.pp_title,
+.po>.po_title,
+.bobea_story>.story_title,
+.event>.event_title
+{
+    width: 243px;
+    height: 30px;
+}
+.news_title>strong,
+.news_title>a{
+    font-size: 12px;
+    display: block;
+}
+.news_title>strong{
+    float: left;
+    margin-top: 5px;
+}
+.news_title>a{
+    float: right;
+    margin: 5px;
+    text-decoration: none;
+    color: #a1a1a1;
+}
+.sd_news>ul>li{
+    display: block;
+    padding: 0 10px 2px;
+}
+.sd_news>ul>li:first-child~li>a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+    padding-left: 10px;
+    background-image: url(../img/button/spot.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.sd_news>ul>li:first-child>a{
+    text-decoration: none;
+}
+.sd_news>ul>li:first-child>a>span,
+.sd_news>ul>li:first-child>a>img{
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+}
+.sd_news>ul>li:first-child>a>span{
+    margin-left: 5px;
+    color: #000;
+}
+
+.pp_title>strong,
+.pp_title>a{
+    font-size: 12px;
+    display: block;
+}
+.pp_title>strong{
+    float: left;
+    margin-top: 5px;
+}
+.pp_title>a{
+    float: right;
+    margin: 5px;
+    text-decoration: none;
+    color: #a1a1a1;
+}
+.sd_popularity>ul>li{
+    display: block;
+    padding: 3px 10px;
+}
+.sd_popularity>ul>li>a{
+    text-decoration: none;
+}
+.sd_popularity>ul>li>a>img,
+.sd_popularity>ul>li>a>span{
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+}
+.sd_popularity>ul>li>a>span{
+    margin-left: 5px;
+    color: #000;
+}
+
+
+.po_title>strong,
+.po_title>a{
+    font-size: 12px;
+    display: block;
+}
+.po_title>strong{
+    float: left;
+    margin-top: 5px;
+}
+.po_title>a{
+    float: right;
+    margin: 5px;
+    text-decoration: none;
+    color: #a1a1a1;
+}
+.po>ul>li{
+    display: block;
+    padding: 3px 10px;
+}
+.po>ul>li>a{
+    text-decoration: none;
+}
+.po>ul>li>a>img,
+.po>ul>li>a>span{
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+}
+.po>ul>li>a>img{
+    position: relative;
+    left: 40px;
+}
+.po>ul>li>a>span{
+    margin-left: 5px;
+    color: #000;
+}
+
+
 
 /*left*/
 
