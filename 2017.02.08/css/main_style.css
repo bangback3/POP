@@ -1,4 +1,8 @@
-*{margin: 0; padding: 0; border: 0;}
+html, body, div, dl, dt, dd, ul, ol, li, h1,
+h2, h3, h4, h5, h6, pre, code, form, fieldset,
+legend, textarea, p, blockquote, th, td, input,
+select, textarea, button
+{margin: 0; padding: 0; border: 0;}
 ul,li{list-style: none;}
 body{background-color: #373737;}
 a{text-decoration: none; font-weight: bolder;}
@@ -28,45 +32,38 @@ a{text-decoration: none; font-weight: bolder;}
 .title>a{
     float: left;
     position: relative;
-    top: 43px;
-}
-.title>.menu{
-    float: right;
-    position: relative;
-    bottom: 54px;
+    top: 48px;
 }
 .title>.gnb1{
-    clear: left;
+    width: 240px;
+    height: 63px;
+    float: left;
     position: relative;
-    left: 300px;
-    bottom: 15px;
+    left:140px;
+    top: 20px;
 }
-.title>.gnb1{
-    width: 230px;
-    height: 58px;
-}
+
 .title>.gnb1>li{
     display: inline-block;
 }
 
 .title>.menu{
-    width: 278px;
+    width: 270px;
     height: 35px;
     background-image: url(../img/bg_util_area.png);
     background-repeat: no-repeat;
-    background-size: 278px 33px;
+    background-size: 270px 33px;
     background-position:center;
+    float: right;
+    position: relative;
+    top: 35px;
 }
 .title>.menu>ul{
-    display: inline-block;
-    /*padding: 3px 0 0 20px;*/
-    width: 250px;
-    height: 20px;
+    padding-top: 5px;
+    text-align: center;
 }
 .title>.menu>ul>li{
     display: inline-block;
-    position: relative;
-    
 }
 .title>.menu>ul>li>a,
 .title>.menu>ul>li>span{
@@ -158,13 +155,12 @@ a{text-decoration: none; font-weight: bolder;}
 }
 .terms>ul{
     display: block;
-    width: 690px;
+    width: 1000px;
     height: 20px;
+    text-align: center;
 }
 .terms>ul>li{
     display: inline-block;
-    /*position: relative;
-    left: 155px;*/
 }
 .terms>ul>li>a,
 .terms>ul>li>span{
