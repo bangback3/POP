@@ -5,7 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../css/main_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <title>Document</title>
+    <script>
+    $(function(){
+
+        var idx = 0;
+
+        function movement(start,end,i){
+            $('.view ul li').eq(i).addClass('on').find('div').css({
+                left:start,
+                'display':'block'
+            }).stop().animate({
+                left:end
+            }).parent().siblings().removeClass();
+
+            if(idx == $('.view ul li').length){
+                idx = 0
+                movement('100%',0,idx)
+            }else if(idx < 0){
+                idx = $('.view ul li').length -1;
+                movement('-100%',0,idx)
+            }
+        }
+
+        $('.next').click(function(){
+            movement(0,'-100%',idx);
+            idx++
+            movement('100%',0,idx);
+        })
+
+        $('.prev').click(function(){
+            movement(0,'100%',idx);
+            idx--
+            movement('-100%',0,idx);
+        })
+
+        $('.view li a').click(function(){
+            var hinum = $('.view ul li .on').index();
+            idx = $(this).parent().index()
+
+            if(hinum < idx){
+                movement(0,'-100%',hinum);
+                movement('100%',0,idx);
+            }else if(hinum > idx){
+                movement(0,'100%',hinum);
+                movement('-100%',0,idx);
+            }
+            return false;
+        })
+    })
+    </script>
 </head>
 <body>
     <div class="headline guid-line">
@@ -32,7 +82,36 @@
     <div class="middle guid-line">
         <div class="middle_ct guid-line">
             <img src="../img/tit_intro01.png" alt="제품소개">
-            <div class="sweet_bomb guid-line"></div>
+            <div class="slide guid-line">
+                <div class="top_btn_group">
+                        <a href="#" class="prev"></a>
+                        <a href="#" class="next"></a>
+                </div>
+                <div class="bottom_btn_group">
+                    <a href=""><img src="../img/btn_all.png" alt="SWEET BOMB 전체제품보기"></a>
+                    <a href=""><img src="../img/btn_tous.png" alt="뚜레주르 장줄리엔 콜라보"></a>
+                </div>
+                <div class="view">
+                    <ul>
+                        <li class="on">
+                            <a href="#"><img src="../img/paging_off.png" alt="off"></a>
+                            <div><img src="../img/intro_product04.png" alt="달콤함이 팡팡볼"></div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../img/paging_off.png" alt="off"></a>
+                            <div><img src="../img/intro_product03.png" alt="달콤한 스윗러브(소)"></div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../img/paging_off.png" alt="off"></a>
+                            <div><img src="../img/intro_product02.png" alt="달콤한 스윗러브(대)"></div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../img/paging_off.png" alt="off"></a>
+                            <div><img src="../img/intro_product01.png" alt="스윗러브 레드벨벳"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <div class="bottom guid-line">

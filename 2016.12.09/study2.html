@@ -29,21 +29,21 @@
 
              var idx = 0;
 
-             var inters = setInterval(function(){
-                 $('.next').click();
-             },3000);
-
-             $('.view').mouseenter(function(){
-
-                 clearInterval(inters)
-
-             }).mouseleave(function(){
-
-                inters = setInterval(function(){
-                 $('.next').click();
-                 },3000);
-
-             })
+            //  var inters = setInterval(function(){
+            //      $('.next').click();
+            //  },3000);
+             //
+            //  $('.view').mouseenter(function(){
+             //
+            //      clearInterval(inters)
+             //
+            //  }).mouseleave(function(){
+             //
+            //     inters = setInterval(function(){
+            //      $('.next').click();
+            //      },3000);
+             //
+            //  })
 
              function movement(start,end,i){
                 $('.view li').eq(i).addClass('on').find('div').css({
