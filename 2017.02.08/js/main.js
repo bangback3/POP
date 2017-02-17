@@ -3,14 +3,14 @@ $(function(){
     var idx = 0;
 
     function movement(start,end,i){
-        $('.view ul li').eq(i).addClass('on').find('div').css({
+        $('.view li').eq(i).addClass('on').find('div').css({
             left:start,
             'display':'block'
         }).stop().animate({
             left:end
         }).parent().siblings().removeClass();
 
-        if(idx == $('.view ul li').length){
+        if(idx == $('.view li').length){
             idx = 0
             movement('100%',0,idx)
         }else if(idx < 0){
@@ -32,7 +32,7 @@ $(function(){
     })
 
     $('.view li a').click(function(){
-        var hinum = $('.view ul li .on').index();
+        var hinum = $('.view li.on').index();
         idx = $(this).parent().index()
 
         if(hinum < idx){
