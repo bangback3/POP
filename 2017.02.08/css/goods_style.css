@@ -98,6 +98,35 @@ a{text-decoration: none; font-weight: bolder;}
     background-color: #fcf5db;
 }
 
+.tabmenu{
+    position: relative;
+    bottom: 170px;
+    width: 939px;
+    height: 1400px;
+    margin: 0 auto;
+}
+.tabmenu img {
+    vertical-align: top;
+}
+.tabmenu ul {
+    margin-top: 15px;
+}
+.tabmenu ul li {float: left;}
+.tabmenu .tabcontent{
+    display: none;
+    width: 939px;
+    height: 1000px;
+    position: absolute;
+    left: 0px;
+    bottom: 180px;
+}
+.tabmenu .tabcontent>li>a>img{
+    display: block;
+    width: 293px;
+    height: 293px;
+    padding: 10px;
+}
+
 /* bottom */
 
 .bottom{
