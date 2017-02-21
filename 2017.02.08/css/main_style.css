@@ -7,7 +7,7 @@ ul,li{list-style: none;}
 body{background-color: #373737;}
 a{text-decoration: none; font-weight: bolder;}
 
-.guid-line{outline: 1px #00F solid;}
+/*.guid-line{outline: 1px #00F solid;}*/
 
 /* headline */
 
@@ -181,7 +181,7 @@ a{text-decoration: none; font-weight: bolder;}
     background-repeat: no-repeat;
     background-position: center;
 }
-.slide>.view>ul>li>.on a{
+.slide>.view>ul>li.on a{
     background-image: url(../img/paging_on.png);
     background-repeat: no-repeat;
     background-position: center;
