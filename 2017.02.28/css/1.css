@@ -1,0 +1,31 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1,
+h2, h3, h4, h5, h6, pre, code, form, fieldset,
+legend, textarea, p, blockquote, th, td, input,
+select, textarea, button
+{margin: 0; padding: 0; border: 0;}
+ul,li{list-style: none;}
+a{text-decoration: none; font-weight: bolder;}
+
+.guid-line{outline: 1px #00F solid;}
+
+
+/*main*/
+
+.content{
+    width: 940px;
+    height: 700px;
+    margin: 40px auto;
+}
+
+.menu1{
+    width: 940px;
+    height: 233px;
+}
+.menu2{
+    width: 940px;
+    height: 233px;
+}
+.menu3{
+    width: 940px;
+    height: 233px;
+}
