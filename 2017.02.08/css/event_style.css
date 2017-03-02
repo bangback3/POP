@@ -40,7 +40,7 @@ a{text-decoration: none; font-weight: bolder;}
     clear: both;
     position: relative;
     left:340px;
-
+    bottom: 10px;
 }
 
 .title>.gnb1>li{

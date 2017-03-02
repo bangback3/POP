@@ -37,10 +37,10 @@ a{text-decoration: none; font-weight: bolder;}
 .title>.gnb1{
     width: 240px;
     height: 63px;
-    float: left;
+    clear: both;
     position: relative;
-    left:140px;
-    top: 20px;
+    left:340px;
+    bottom: 10px;
 }
 
 .title>.gnb1>li{
@@ -56,7 +56,7 @@ a{text-decoration: none; font-weight: bolder;}
     background-position:center;
     float: right;
     position: relative;
-    top: 35px;
+    bottom: 58px;
 }
 .title>.menu>ul{
     padding-top: 5px;
