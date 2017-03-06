@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Tip | Image Rollover</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      $( document ).ready( function() {
+          $('.toto').mouseenter( function() {
+            $('.toto > .momo').show();
+          } )
+          $('.toto').mouseout( function() {
+            $('.toto > .momo').hide();
+          } );
+      } );
+    </script>
+    <style>
+        .toto{
+            width: 293px;
+            height: 293px;
+            position: relative;
+        }
+        .momo{
+            display: none;
+            width: 293px;
+            height: 50px;
+            position: absolute;
+            top: 243px;
+            background-color: #000;
+            opacity: 0.6;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="toto">
+        <div class="momo"></div>
+        <img src="../img/hover_off.png">
+    </div>
+  </body>
+</html>
