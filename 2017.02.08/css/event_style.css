@@ -47,6 +47,31 @@ a{text-decoration: none; font-weight: bolder;}
     display: inline-block;
 }
 
+.gnb1>li>a.vtdgoods{
+	display: block;
+	width: 105px;
+	height: 65px;
+	overflow:hidden;
+	position:relative;
+}
+.gnb1>li>a:hover.vtdgoods img{
+	position:absolute;
+	top:-58px;
+}
+
+.gnb1>li>a.arms{
+	display: block;
+	width: 105px;
+	height: 58px;
+	overflow:hidden;
+	position:relative;
+	bottom:5px;
+}
+.gnb1>li>a:hover.arms img{
+	position:absolute;
+	top:-58px;
+}
+
 .title>.menu{
     width: 270px;
     height: 35px;
@@ -114,7 +139,6 @@ a{text-decoration: none; font-weight: bolder;}
 .popup1{
     width:395px;
     height:500px;
-    margin-top: 500px;
     background-image: url(../img/popup_layer01.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -201,14 +225,15 @@ a{text-decoration: none; font-weight: bolder;}
 }
 
 .popup2{
-    width:395px;
-    height:500px;
+    width:450px;
+    height:900px;
     /*margin-top: 500px;*/
-    background-image: url(../img/popup_layer01.png);
+    background-image: url(../img/popup_layer02.png);
+    background-size: 450px 900px;
     background-repeat: no-repeat;
     background-position: center;
 }
-/*팝업 위치 문제 클릭한 곳에서 팝업이 생성되지않고 아래쪽에서 생성된다.*/
+/*�뙘�뾽 �쐞移� 臾몄젣 �겢由��븳 怨녹뿉�꽌 �뙘�뾽�씠 �깮�꽦�릺吏��븡怨� �븘�옒履쎌뿉�꽌 �깮�꽦�맂�떎.*/
 
 /* notice */
 

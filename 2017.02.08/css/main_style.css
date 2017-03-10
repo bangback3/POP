@@ -35,7 +35,7 @@ a{text-decoration: none; font-weight: bolder;}
     top: 48px;
 }
 .title>.gnb1{
-    width: 240px;
+ 	width: 240px;
     height: 63px;
     clear: both;
     position: relative;
@@ -45,6 +45,30 @@ a{text-decoration: none; font-weight: bolder;}
 
 .title>.gnb1>li{
     display: inline-block;
+}
+.gnb1>li>a.vtdgoods{
+	display: block;
+	width: 105px;
+	height: 65px;
+	overflow:hidden;
+	position:relative;
+}
+.gnb1>li>a:hover.vtdgoods img{
+	position:absolute;
+	top:-58px;
+}
+
+.gnb1>li>a.arms{
+	display: block;
+	width: 105px;
+	height: 58px;
+	overflow:hidden;
+	position:relative;
+	bottom:5px;
+}
+.gnb1>li>a:hover.arms img{
+	position:absolute;
+	top:-58px;
 }
 
 .title>.menu{

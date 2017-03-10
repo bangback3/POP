@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(){	
     $(".tabmenu").each(function(){
         var tab = $(this).children("ul");
         var tabBtn = tab.children("li").children("a");
@@ -26,4 +26,5 @@ $(document).ready(function(){
         });
             tabBtn.eq(0).click();
     });
+    
 });
