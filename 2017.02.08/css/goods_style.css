@@ -161,6 +161,23 @@ a{text-decoration: none; font-weight: bolder;}
     text-align: center;
     position: relative;
 }
+
+.tabcontent1>ul>li>.pd:after{
+    content: "dkjfdkjf";
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:rgba(255,255,255,0.9);
+    opacity:0;
+    transition:0.1s;
+}
+.tabcontent1>ul>li>.pd:hover:after{
+    opacity:1;
+}
 .tabcontent1>ul>li>.pd>img{
     width: 284px;
     height: 284px;
@@ -198,7 +215,7 @@ a{text-decoration: none; font-weight: bolder;}
 }
 
 
-/* bottom */
+/* bottom -----------------------------------------------------*/
 
 .bottom{
     width: 100%;
