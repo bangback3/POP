@@ -150,12 +150,26 @@ a{text-decoration: none; font-weight: bolder;}
 }
 .tabcontent1>ul>li>div{
     width: 284px;
+    text-align: center;
+    position: relative;
 }
 .tabcontent1>ul>li>div>img{
     width: 284px;
     height: 284px;
 }
+.tabcontent1>ul>li>div>cite{
+    position: absolute;
+    left: 0;
+    top:255px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: bold;
 
+}
 
 /* bottom */
 
