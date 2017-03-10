@@ -10,7 +10,7 @@ a{text-decoration: none; font-weight: bolder;}
  .guid-line{outline: 1px #00F solid;}
 
 
-/* headline */
+/* headline -----------------------------------------------------*/
 
 .headline{
     width: 100%;
@@ -18,7 +18,7 @@ a{text-decoration: none; font-weight: bolder;}
     background-color: #FFF;
 }
 
-/* title */
+/* title -----------------------------------------------------*/
 
 .title{
     width: 1000px;
@@ -94,7 +94,7 @@ a{text-decoration: none; font-weight: bolder;}
     color: #ff5d3b;
 }
 
-/* top */
+/* top -----------------------------------------------------*/
 
 .top{
     width: 100%;
@@ -111,7 +111,8 @@ a{text-decoration: none; font-weight: bolder;}
     margin: 0 auto;
 
 }
-/* middle */
+
+/* middle -----------------------------------------------------*/
 
 .tab_area{
 	width: 100%;
@@ -132,6 +133,9 @@ a{text-decoration: none; font-weight: bolder;}
 .tab_area>.tab_list>li:first-child+li+li{
     margin-left:10px;
 }
+
+/* tabcontent1-----------------------------------------------------*/
+
 .tabcontent1{
     display: block;
     padding: 38px 0 80px;
