@@ -154,7 +154,7 @@ a{text-decoration: none; font-weight: bolder;}
     margin: 20px 0 0 20px;
     background-color: #FFF;
 }
-.tabcontent1>ul>li>.pd{
+.tabcontent1>ul>li>div:first-child{
     width: 284px;
     height: 284px;
     padding-bottom: 20px;
@@ -162,8 +162,7 @@ a{text-decoration: none; font-weight: bolder;}
     position: relative;
 }
 
-.tabcontent1>ul>li>.pd:after{
-    content: "dkjfdkjf";
+.tabcontent1>ul>li>div:first-child:after{
     display: block;
     position: absolute;
     z-index: 0;
@@ -174,15 +173,24 @@ a{text-decoration: none; font-weight: bolder;}
     background-color:rgba(255,255,255,0.9);
     opacity:0;
     transition:0.1s;
+
 }
-.tabcontent1>ul>li>.pd:hover:after{
+.tabcontent1>ul>li>.pd_1:after{
+    content: "dlkfjdlkfjd";
+    text-align: center;
+    vertical-align: middle;
+}
+.tabcontent1>ul>li>.pd_2:after{
+    content: "dkdkdkdwwww";
+}
+.tabcontent1>ul>li>div:first-child:hover:after{
     opacity:1;
 }
-.tabcontent1>ul>li>.pd>img{
+.tabcontent1>ul>li>div:first-child>img{
     width: 284px;
     height: 284px;
 }
-.tabcontent1>ul>li>.pd>cite{
+.tabcontent1>ul>li>div:first-child>cite{
     position: absolute;
     left: 0;
     top:255px;
