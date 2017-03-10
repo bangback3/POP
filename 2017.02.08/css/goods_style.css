@@ -132,7 +132,29 @@ a{text-decoration: none; font-weight: bolder;}
 .tab_area>.tab_list>li:first-child+li+li{
     margin-left:10px;
 }
-
+.tabcontent1{
+    display: block;
+}
+.tabcontent1>ul{
+    width: 966px;
+    height: 1616px;
+    padding-left: 34px;
+    margin: 0 auto;
+}
+.tabcontent1>ul>li{
+    display: inline-block;
+    width: 284px;
+    height: 384px;
+    margin: 20px 0 0 20px;
+    background-color: #FFF;
+}
+.tabcontent1>ul>li>div{
+    width: 284px;
+}
+.tabcontent1>ul>li>div>img{
+    width: 284px;
+    height: 284px;
+}
 
 
 /* bottom */
