@@ -134,6 +134,8 @@ a{text-decoration: none; font-weight: bolder;}
 }
 .tabcontent1{
     display: block;
+    padding: 38px 0 80px;
+    background-color: #fcf5db;
 }
 .tabcontent1>ul{
     width: 966px;
@@ -148,16 +150,18 @@ a{text-decoration: none; font-weight: bolder;}
     margin: 20px 0 0 20px;
     background-color: #FFF;
 }
-.tabcontent1>ul>li>div{
+.tabcontent1>ul>li>.pd{
     width: 284px;
+    height: 284px;
+    padding-bottom: 20px;
     text-align: center;
     position: relative;
 }
-.tabcontent1>ul>li>div>img{
+.tabcontent1>ul>li>.pd>img{
     width: 284px;
     height: 284px;
 }
-.tabcontent1>ul>li>div>cite{
+.tabcontent1>ul>li>.pd>cite{
     position: absolute;
     left: 0;
     top:255px;
@@ -168,8 +172,27 @@ a{text-decoration: none; font-weight: bolder;}
     font-style: normal;
     font-size: 20px;
     font-weight: bold;
-
 }
+.tabcontent1>ul>li>.button{
+    width: 284px;
+    height: 55px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.tabcontent1>ul>li>.button>a{
+    display: inline-block;
+    width: 99px;
+    height: 55px;
+}
+.tabcontent1>ul>li>.button>a:first-child{
+    background-image: url(../img/goods/btn_buy.png);
+    background-repeat: no-repeat;
+}
+.tabcontent1>ul>li>.button>a:first-child+a{
+    background-image: url(../img/goods/btn_detail.png);
+    background-repeat: no-repeat;
+}
+
 
 /* bottom */
 
