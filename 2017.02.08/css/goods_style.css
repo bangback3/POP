@@ -127,23 +127,21 @@ a{text-decoration: none; font-weight: bolder;}
 }
 .tab_area>.tab_list>li{
 	display:inline-block;
-
+}
+.tab_area>.tab_list>li{
+    width: 313px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    bottom:0px;
+}
+.tab_area>.tab_list>li:hover img{
+    position: absolute;
+    top: -150px;
 }
 .tab_area>.tab_list>li:first-child+li,
 .tab_area>.tab_list>li:first-child+li+li{
     margin-left:10px;
-}
-
-.gnb1>li>a.vtdgoods{
-	display: block;
-	width: 105px;
-	height: 65px;
-	overflow:hidden;
-	position:relative;
-}
-.gnb1>li>a:hover.vtdgoods img{
-	position:absolute;
-	top:-58px;
 }
 
 /* tabcontent1-----------------------------------------------------*/
