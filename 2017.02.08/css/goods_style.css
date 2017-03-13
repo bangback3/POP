@@ -143,7 +143,6 @@ a{text-decoration: none; font-weight: bolder;}
 }
 .tabcontent1>ul{
     width: 966px;
-    height: 1616px;
     padding-left: 34px;
     margin: 0 auto;
 }
@@ -154,15 +153,18 @@ a{text-decoration: none; font-weight: bolder;}
     margin: 20px 0 0 20px;
     background-color: #FFF;
 }
-.tabcontent1>ul>li>div:first-child{
+.tabcontent1>ul>li>a>div:first-child{
     width: 284px;
     height: 284px;
     padding-bottom: 20px;
     text-align: center;
     position: relative;
 }
+.tabcontent1>ul>li>a>div:first-child>cite{
+    color: #000;
+}
 
-.tabcontent1>ul>li>div:first-child:after{
+.tabcontent1>ul>li>a>div:first-child:after{
     display: block;
     position: absolute;
     z-index: 0;
@@ -173,24 +175,51 @@ a{text-decoration: none; font-weight: bolder;}
     background-color:rgba(255,255,255,0.9);
     opacity:0;
     transition:0.1s;
-
+    color: #666;
+    font-weight: normal;
+    font-size: 13px;
+    width: 254px;
+    height: 20px;
+    padding: 132px 15px 132px 15px;
 }
-.tabcontent1>ul>li>.pd_1:after{
-    content: "dlkfjdlkfjd";
-    text-align: center;
-    vertical-align: middle;
+.tabcontent1>ul>li>a>.pd_1:after{
+    content: "달콤하고 다양한 필링이 들어있어 여러 맛을 느낄 수 있는 뚜레쥬르의 대표 초콜릿 제품";
 }
-.tabcontent1>ul>li>.pd_2:after{
-    content: "dkdkdkdwwww";
+.tabcontent1>ul>li>a>.pd_2:after{
+    content: "사랑의 달콤함이 팡팡 터질 것 같은 폭탄볼을 형상화한 뚜레쥬르만의 특별하고도 귀여운 제품";
 }
-.tabcontent1>ul>li>div:first-child:hover:after{
+.tabcontent1>ul>li>a>.pd_3:after{
+    content: "요거트 초콜릿과 크랜베리가 믹스된 초콜릿을 유리병에 가득 담은 제품으로 사랑스런 포장 박스에 담아 선물하기 좋은 제품";
+}
+.tabcontent1>ul>li>a>.pd_4:after{
+    content: "달콤하고 다양한 필링이 들어있어 여러 맛을 느낄 수 있는 화려함을 강조한 뚜레쥬르의 대표 초콜릿 제품";
+}
+.tabcontent1>ul>li>a>.pd_5:after{
+    content: "러블리한 하트를 담은 수제 캔디를 유리병에 가득 담아낸 제품 (포장박스가 함께 제공)";
+}
+.tabcontent1>ul>li>a>.pd_6:after{
+    content: "천연색소를 사용하고 있으며 캔디 속에 초코 카라멜이 들어있어 달콤한 캔디";
+}
+.tabcontent1>ul>li>a>.pd_7:after{
+    content: "딸기향 필링이 들어간 바형태의 초콜릿으로 낱개 포장되어있어 손에 묻지않고 간편하게 꺼내 드실 수 있는 초콜릿";
+}
+.tabcontent1>ul>li>a>.pd_8:after{
+    content: "프랑스산 과일향 캔디와 벌꿀이 듬뿍 들어있는 허니 캔디를 각각 유리병에 담아낸 제품 (포장박스가 함께 제공)";
+}
+.tabcontent1>ul>li>a>.pd_9:after{
+    content: "내 마음이 열리듯 상자를 열면 강렬한 사랑을 느낄 수 있으며 다양한 필링의 초콜릿이 들어있는 제품";
+}
+.tabcontent1>ul>li>a>.pd_10:after{
+    content: "크림치즈 프로스팅을 레드벨벳 시트에 샌드하고 장줄리앙 이미지픽으로 장식한 시즌 레드벨벳 케이크";
+}
+.tabcontent1>ul>li>a>div:first-child:hover:after{
     opacity:1;
 }
-.tabcontent1>ul>li>div:first-child>img{
+.tabcontent1>ul>li>a>div:first-child>img{
     width: 284px;
     height: 284px;
 }
-.tabcontent1>ul>li>div:first-child>cite{
+.tabcontent1>ul>li>a>div:first-child>cite{
     position: absolute;
     left: 0;
     top:255px;
