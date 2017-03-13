@@ -168,9 +168,43 @@ a{text-decoration: none; font-weight: bolder;}
 .bottom_btn_group{
     width: 398.11px;
     height: 63.75px;
-    position: absolute;z-index: 1;
+    position: absolute;
+    z-index: 1;
     top: 237px;
     left: 522px;
+}
+.pop{
+    position:absolute;
+    z-index: 3;
+    display:none;
+}
+
+.popup1{
+    width:395px;
+    height:500px;
+    background-image: url(../img/popup_layer01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.close{
+    display: block;
+    width: 10px;
+    height: 34px;
+    float: right;
+    position: relative;
+    left: 8px;
+    top: 50px;
+}
+
+.bl{
+    position:fixed;
+    z-index: 2;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    background-color: rgba(0,0,0,.8);
 }
 .slide>.view{
     width: 1000px;

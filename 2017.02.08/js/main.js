@@ -44,4 +44,40 @@ $(function(){
         }
         return false;
     })
+
+
+    $('.open').click(function(){
+        bl();
+
+        var tg = '.'+$(this).attr('id')
+
+        var w = $(tg).width();
+        var h = $(tg).height();
+
+        $(tg).show().css({
+            left:'50%',
+            margitTop:'5%',
+            top:function(){
+                return $(window).scrollTop() + 'px'
+            },
+            marginLeft:function(){
+                return '-'+(w / 2)+"px"
+            }
+        })
+    })
+
+    var close = function(){
+
+        $('.pop').hide();
+        $('.bl').fadeOut(function(){
+            $(this).remove()
+        })
+    }
+
+    $('body').on('click','.bl',close)
+    $('.close').click(close)
+
+    function bl(){
+        $('body').prepend('<div class="bl"></div>')
+    }
 })

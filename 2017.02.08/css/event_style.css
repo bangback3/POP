@@ -225,11 +225,11 @@ a{text-decoration: none; font-weight: bolder;}
 }
 
 .popup2{
-    width:450px;
-    height:900px;
+    width:904px;
+    height:672px;
     /*margin-top: 500px;*/
     background-image: url(../img/popup_layer02.png);
-    background-size: 450px 900px;
+    background-size: 904px 672px;
     background-repeat: no-repeat;
     background-position: center;
 }
