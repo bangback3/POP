@@ -134,6 +134,18 @@ a{text-decoration: none; font-weight: bolder;}
     margin-left:10px;
 }
 
+.gnb1>li>a.vtdgoods{
+	display: block;
+	width: 105px;
+	height: 65px;
+	overflow:hidden;
+	position:relative;
+}
+.gnb1>li>a:hover.vtdgoods img{
+	position:absolute;
+	top:-58px;
+}
+
 /* tabcontent1-----------------------------------------------------*/
 
 .tabcontent1{
