@@ -180,9 +180,9 @@ a{text-decoration: none; font-weight: bolder;}
 }
 
 .popup1{
-    width:395px;
-    height:500px;
-    background-image: url(../img/popup_layer01.png);
+    width:560px;
+    height:842px;
+    background-image: url(../img/popup_layer03.png);
     background-repeat: no-repeat;
     background-position: center;
 }
