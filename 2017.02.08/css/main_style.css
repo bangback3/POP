@@ -9,6 +9,19 @@ a{text-decoration: none; font-weight: bolder;}
 
 /*.guid-line{outline: 1px #00F solid;}*/
 
+
+.floating_bn{
+    position: fixed;
+    z-index:1;
+    width: 230px;
+    height: 244px;
+    overflow: hidden;
+    right: 45%;
+    top: 24%;
+    margin-right:-530px;
+    padding: 0;
+}
+
 /* headline */
 
 .headline{
