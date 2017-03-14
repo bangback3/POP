@@ -22,7 +22,7 @@ a{text-decoration: none; font-weight: bolder;}
     padding: 0;
 }
 
-/* headline */
+/* headline ----------------------------------------------------- */
 
 .headline{
     width: 100%;
@@ -30,7 +30,7 @@ a{text-decoration: none; font-weight: bolder;}
     background-color: #FFF;
 }
 
-/* title */
+/* title ----------------------------------------------------- */
 
 .title{
     width: 1000px;
@@ -108,7 +108,7 @@ a{text-decoration: none; font-weight: bolder;}
     color: #ff5d3b;
 }
 
-/* top */
+/* top ----------------------------------------------------- */
 
 .top{
     width: 100%;
@@ -125,7 +125,7 @@ a{text-decoration: none; font-weight: bolder;}
     margin: 0 auto;
 }
 
-/* middle */
+/* middle ----------------------------------------------------- */
 
 .middle{
     width: 100%;
@@ -259,7 +259,7 @@ a{text-decoration: none; font-weight: bolder;}
 }
 
 
-/*bottom*/
+/*bottom -----------------------------------------------------*/
 
 .bottom{
     width: 100%;
@@ -288,7 +288,7 @@ a{text-decoration: none; font-weight: bolder;}
     padding-top: 14px;
 }
 
-/* footer */
+/* footer  -----------------------------------------------------*/
 
 .footer{
     width: 100%;

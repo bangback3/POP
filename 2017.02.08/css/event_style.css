@@ -9,7 +9,7 @@ a{text-decoration: none; font-weight: bolder;}
 
 /*.guid-line{outline: 1px #00F solid;}*/
 
-/* headline */
+/* headline -----------------------------------------------------*/
 
 .headline{
     width: 100%;
@@ -17,7 +17,7 @@ a{text-decoration: none; font-weight: bolder;}
     background-color: #FFF;
 }
 
-/* title */
+/* title  -----------------------------------------------------*/
 
 .title{
     width: 1000px;
@@ -96,7 +96,7 @@ a{text-decoration: none; font-weight: bolder;}
     color: #ff5d3b;
 }
 
-/* top */
+/* top -----------------------------------------------------*/
 
 .top{
     width: 100%;
@@ -113,7 +113,7 @@ a{text-decoration: none; font-weight: bolder;}
     margin: 0 auto;
 }
 
-/* middle */
+/* middle -----------------------------------------------------*/
 
 .middle{
     width: 100%;
@@ -184,7 +184,7 @@ a{text-decoration: none; font-weight: bolder;}
     left: 82px;
 }
 
-/* bottom */
+/* bottom -----------------------------------------------------*/
 
 .bottom{
     width: 100%;
@@ -235,7 +235,7 @@ a{text-decoration: none; font-weight: bolder;}
 }
 /*�뙘�뾽 �쐞移� 臾몄젣 �겢由��븳 怨녹뿉�꽌 �뙘�뾽�씠 �깮�꽦�릺吏��븡怨� �븘�옒履쎌뿉�꽌 �깮�꽦�맂�떎.*/
 
-/* notice */
+/* notice -----------------------------------------------------*/
 
 .notice{
     width: 100%;
@@ -253,7 +253,7 @@ a{text-decoration: none; font-weight: bolder;}
     top: 120px;
 }
 
-/* footer */
+/* footer -----------------------------------------------------*/
 
 .footer{
     width: 100%;
