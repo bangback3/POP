@@ -263,6 +263,135 @@ a{text-decoration: none; font-weight: bolder;}
 
 /* tabcontent2-----------------------------------------------------*/
 
+.tabcontent2{
+    display: block;
+    padding: 38px 0 80px;
+    background-color: #fcf5db;
+}
+.tabcontent2>ul{
+    width: 966px;
+    padding-left: 34px;
+    margin: 0 auto;
+}
+.tabcontent2>ul>li{
+    display: inline-block;
+    width: 284px;
+    height: 384px;
+    margin: 20px 0 0 20px;
+    background-color: #FFF;
+}
+.tabcontent2>ul>li>a>div:first-child{
+    width: 284px;
+    height: 284px;
+    padding-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+.tabcontent2>ul>li>a>div:first-child>cite{
+    color: #000;
+}
+
+.tabcontent2>ul>li>a>div:first-child:after{
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:rgba(255,255,255,0.9);
+    opacity:0;
+    transition:0.1s;
+    color: #666;
+    font-weight: normal;
+    font-size: 13px;
+    width: 254px;
+    height: 20px;
+    padding: 132px 15px 132px 15px;
+}
+.tabcontent2>ul>li>a>.pd_1:after{
+    content: "카카오 함량이 58%인 다크 초콜릿 16개가 다채로운 색상으로 포장이 되어있는 제품";
+}
+.tabcontent2>ul>li>a>.pd_2:after{
+    content: "장줄리앙의 손거울이 들어있으며 성냥 모양의 초콜릿 쿠키와 블랙 쇼콜라의 달콤함이 가득 터지는 선물하기 좋은 제품";
+}
+.tabcontent2>ul>li>a>.pd_3:after{
+    content: "블랙 쇼콜라와 달콤한 캔디를 장줄리앙의 사랑스런 일러스트가 그려져 있는 머그잔에 담아 선물하기 좋은 제품";
+}
+.tabcontent2>ul>li>a>.pd_4:after{
+    content: "뚜껑을 열면 사랑의 달콤함이 터지듯이 활짝 열리며 달콤함이 쏟아지는 러블리한 제품";
+}
+.tabcontent2>ul>li>a>.pd_5:after{
+    content: "뚜껑을 열면 사랑의 달콤함이 터지듯이 활짝 열리며 달콤한 스위츠들과 귀여운 곰돌이 인형이 나타나는 러블리한 제품";
+}
+.tabcontent2>ul>li>a>.pd_6:after{
+    content: "캐러멜, 비스킷, 커피빈, 과일 등이 들어있는 8종류의 볼 초콜릿을 골고루 담아 다양한 맛을 즐길 수 있는 달콤한 초코 가득 제품";
+}
+.tabcontent2>ul>li>a>.pd_7:after{
+    content: "작고 앙증맞은 네모 모양 캔디를 유리병에 함께 담아 선물하기 좋도록 포장이 되어있는 제품";
+}
+.tabcontent2>ul>li>a>.pd_8:after{
+    content: "프랑스산 발로나 초콜릿을 사용하였으며 입 안에서 살살녹는 고급 제품";
+}
+.tabcontent2>ul>li>a>.pd_9:after{
+    content: "네 가지 천연과일향과 다양한 과일/채소즙을 사용한 앙증맞은 곰돌이 모양의 젤리";
+}
+.tabcontent2>ul>li>a>.pd_10:after{
+    content: "여러가지 모양의 젤리를 함께 모아 골라먹는 즐거움을 더한 제품으로 5가지 천연과일향과 다양한 과일/채소즙을 사용한 젤리";
+}
+.tabcontent2>ul>li>a>.pd_11:after{
+    content: "라바와 친구들을 닮은 꿈틀이 모양 젤리로 천연과일향과 천연색소를 사용하여 안심하고 드실 수 있는 새콤달콤한 맛의 젤리";
+}
+.tabcontent2>ul>li>a>.pd_12:after{
+    content: "귀여운 형태의 티라미스로 진한 커피크림을 품고있는 달콤한 폭탄케이크!";
+}
+.tabcontent2>ul>li>a>.pd_13:after{
+    content: "진한 초코케이크에 알록달록 초코볼, 귀여운 마카롱과 세서미스트리트 아이싱 쿠키로 장식한 키덜트용 캐릭터 케이크";
+}
+.tabcontent2>ul>li>a>.pd_14:after{
+    content: "달콤한 솜사탕 향이 솔솔나고 딸기&화이트 시트 사이에 입안에서 톡톡 터지는 팝핑캔디를 샌드한 시즌 스페셜 케이크";
+}
+.tabcontent2>ul>li>a>.pd_15:after{
+    content: "진한 초콜릿과 생크림을 듬뿍 넣은 가나슈 초콜릿이 부드러운 시트와 크리미하게 잘 어우러지는 뚜레쥬르만의 시그니쳐 케이크";
+}
+.tabcontent2>ul>li>a>div:first-child:hover:after{
+    opacity:1;
+}
+.tabcontent2>ul>li>a>div:first-child>img{
+    width: 284px;
+    height: 284px;
+}
+.tabcontent2>ul>li>a>div:first-child>cite{
+    position: absolute;
+    left: 0;
+    top:255px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: bold;
+}
+.tabcontent2>ul>li>.button{
+    width: 284px;
+    height: 55px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.tabcontent2>ul>li>.button>a{
+    display: inline-block;
+    width: 99px;
+    height: 55px;
+}
+.tabcontent2>ul>li>.button>a:first-child{
+    background-image: url(../img/goods/btn_buy.png);
+    background-repeat: no-repeat;
+}
+.tabcontent2>ul>li>.button>a:first-child+a{
+    background-image: url(../img/goods/btn_detail.png);
+    background-repeat: no-repeat;
+}
 
 /* tabcontent3-----------------------------------------------------*/
 
