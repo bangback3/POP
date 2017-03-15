@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        function init_tabs () {
+            $(".tab_content").css('display','none');
+            if(!$(".tabs_menu").length) { return; }
+            $("div.tabs_contents_wrap").each(function(){
+                $(this).find("div.tab_content:first").show();
+            });
+            $("ul.tabs_menu").on('click','a', function(){
+                if(!$(this).hasClass('current')){
+                    $(this).addClass('current').parent('li').siblings('li').find('a.current').removeClass('current');
+                    $($(this).attr('href')).show().siblings('div.tab_content').hide();
+                }
+                this.blur();
+                        return false;
+            });
+        }
+    </script>
+
+
+</div>
+    <title>Document</title>
+</head>
+<body>
+    <div class="tabmenu_wrap">
+        <ul class="tabs_menu">
+            <li><a href="#tab_content01" class="tab1 current"><span class="blind">Tab 1</span></a></li>
+            <li><a href="#tab_content02" class="tab2"><span class="blind">Tab 2</span></a></li>
+        </ul>
+        <div class="tab_content_wrap">
+            <div id="tab_content01" class="tab_content">
+                tab-1 내용
+            </div>
+            <div id="tab_content02" class="tab_content">
+                tab-2 내용
+            </div>
+        </div>
+
+</body>
+</html>
