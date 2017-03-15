@@ -145,12 +145,12 @@ a{text-decoration: none; font-weight: bolder;}
     margin-left:10px;
 }
 
-.tab_area>div{
+/*.tab_area>div{
     overflow: hidden;
     position: absolute;
     left: 0;
     right: 0;
-}
+}*/
 
 /* tabcontent1-----------------------------------------------------*/
 
