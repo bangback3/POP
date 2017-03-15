@@ -395,7 +395,130 @@ a{text-decoration: none; font-weight: bolder;}
 
 /* tabcontent3-----------------------------------------------------*/
 
+.tabcontent3{
+    display: block;
+    padding: 38px 0 80px;
+    background-color: #fcf5db;
+}
+.tabcontent3>ul{
+    width: 966px;
+    padding-left: 34px;
+    margin: 0 auto;
+}
+.tabcontent3>ul>li{
+    display: inline-block;
+    width: 284px;
+    height: 384px;
+    margin: 20px 0 0 20px;
+    background-color: #FFF;
+}
+.tabcontent3>ul>li>a>div:first-child{
+    width: 284px;
+    height: 284px;
+    padding-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+.tabcontent3>ul>li>a>div:first-child>cite{
+    color: #000;
+}
 
+.tabcontent3>ul>li>a>div:first-child:after{
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:rgba(255,255,255,0.9);
+    opacity:0;
+    transition:0.1s;
+    color: #666;
+    font-weight: normal;
+    font-size: 13px;
+    width: 254px;
+    height: 20px;
+    padding: 132px 15px 132px 15px;
+}
+.tabcontent3>ul>li>a>.pd_1:after{
+    content: "달콤함이 팡팡 터지는 다이너마이트를 연상 시키는 제품으로 가볍게 선물하기 좋은 제품";
+}
+.tabcontent3>ul>li>a>.pd_2:after{
+    content: "딸기맛과 레몬맛 캔디를 한쪽으로 트위스트 포장하여 내용물이 보이는 깜찍한 투명케이스에 담아 리본으로 포장한 귀여운 제품";
+}
+.tabcontent3>ul>li>a>.pd_3:after{
+    content: "웃는 모습이 인상적인 스마일 모양의 수제 캔디를 투명한 병에 담은 제품으로 웃음을 가득 드리고 싶은 마음을 담은 제품";
+}
+.tabcontent3>ul>li>a>.pd_4:after{
+    content: "카카오 함량이 58%인 다크 초콜릿 2개가 하나로 묶여있는 제품으로 선물하기에 좋은 쁘띠 사이즈 제품";
+}
+.tabcontent3>ul>li>a>.pd_5:after{
+    content: "꽈배기 모양의 롤리팝 스틱캔디로 친구, 동료에게 선물하기 좋은 제품";
+}
+.tabcontent3>ul>li>a>.pd_6:after{
+    content: "원형 모양의 롤리팝 스틱캔디로 친구, 동료에게 선물하기 좋은 제품";
+}
+.tabcontent3>ul>li>a>.pd_7:after{
+    content: "하트 모양의 롤리팝 스틱캔디로 친구, 동료에게 선물하기 좋은 제품";
+}
+.tabcontent3>ul>li>a>.pd_8:after{
+    content: "다양한 과일과 새콤한 사우어가 만난 젤리빈을 예쁜병에 담은 제품";
+}
+.tabcontent3>ul>li>a>.pd_9:after{
+    content: "천연색소와 천연향으로 과일 본연의 맛을 느낄 수 있는 종합과일맛 젤리빈을 예쁜병에 담은 제품";
+}
+.tabcontent3>ul>li>a>.pd_10:after{
+    content: "집모양도 만들고, 배모양도 만들 수 있는 블록형캔디를 예쁜병에 담은 제품";
+}
+.tabcontent3>ul>li>a>.pd_11:after{
+    content: "부드러운 아이스크림이 달콤한 머쉬멜로우로 변신한 아이스크림맛 무지방 머쉬멜로우";
+}
+.tabcontent3>ul>li>a>.pd_12:after{
+    content: "솔티카라멜 크림이 듬뿍 들어간 빵 위에 바삭한 하겔슈가를 토핑한 짠단의 조화가 잘 어울리는 번제품";
+}
+.tabcontent3>ul>li>a>.pd_13:after{
+    content: "알록달록하고 깜직한 하트와 과일 모양의 수제 캔디를 병에 담아 가볍게 선물하기에 좋은 제품";
+}
+
+.tabcontent3>ul>li>a>div:first-child:hover:after{
+    opacity:1;
+}
+.tabcontent3>ul>li>a>div:first-child>img{
+    width: 284px;
+    height: 284px;
+}
+.tabcontent3>ul>li>a>div:first-child>cite{
+    position: absolute;
+    left: 0;
+    top:255px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: bold;
+}
+.tabcontent3>ul>li>.button{
+    width: 284px;
+    height: 55px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.tabcontent3>ul>li>.button>a{
+    display: inline-block;
+    width: 99px;
+    height: 55px;
+}
+.tabcontent3>ul>li>.button>a:first-child{
+    background-image: url(../img/goods/btn_buy.png);
+    background-repeat: no-repeat;
+}
+.tabcontent3>ul>li>.button>a:first-child+a{
+    background-image: url(../img/goods/btn_detail.png);
+    background-repeat: no-repeat;
+}
 
 /* bottom -----------------------------------------------------*/
 
