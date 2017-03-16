@@ -126,15 +126,19 @@ a{text-decoration: none; font-weight: bolder;}
     margin: 0 auto;
 
 }
-.tab_area>.tab_list>li{
-	display:inline-block;
-}
+
 .tab_area>.tab_list>li{
     width: 313px;
     height: 150px;
     overflow: hidden;
     position: relative;
     bottom:0px;
+    display:inline-block;
+}
+.tab_area>.tab_list>li>a{
+    display: block;
+    width: 313px;
+    height: 150px;
 }
 .tab_area>.tab_list>li:hover img{
     position: absolute;
@@ -144,9 +148,11 @@ a{text-decoration: none; font-weight: bolder;}
 .tab_area>.tab_list>li:first-child+li+li{
     margin-left:10px;
 }
-/*.tab_area>.sd{
-    width: 100%;
-}*/
+.tab_area>.sd>div{
+    display: none;
+}
+
+
 /* tabcontent1-----------------------------------------------------*/
 
 .tabcontent1{
