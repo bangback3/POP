@@ -1,10 +1,10 @@
 $(document).ready(function(){
-    $(".tab_list a").click(function(event) {
-        event.preventDefault();
-        $(this).parent().addClass("current");
-        $(this).parent().siblings().removeClass("current");
-        var tab = $(this).attr("href");
-        $(".tab_area>div").not(tab);
-        $(tab).show();
+    $('.tab_area .sd div').hide();
+    $('.tab_area .sd div').first().show();
+
+     $('ul.tab_list li').click(function () {
+        var idx = $(this).index();
+
+        $('.sd div').eq(idx).show().siblings().hide();
     });
 });

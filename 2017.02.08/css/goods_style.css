@@ -144,18 +144,12 @@ a{text-decoration: none; font-weight: bolder;}
 .tab_area>.tab_list>li:first-child+li+li{
     margin-left:10px;
 }
-
-/*.tab_area>div{
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    right: 0;
+/*.tab_area>.sd{
+    width: 100%;
 }*/
-
 /* tabcontent1-----------------------------------------------------*/
 
 .tabcontent1{
-    display: block;
     padding: 38px 0 80px;
     background-color: #fcf5db;
 }
@@ -272,7 +266,6 @@ a{text-decoration: none; font-weight: bolder;}
 /* tabcontent2-----------------------------------------------------*/
 
 .tabcontent2{
-    display: block;
     padding: 38px 0 80px;
     background-color: #fcf5db;
 }
@@ -404,7 +397,6 @@ a{text-decoration: none; font-weight: bolder;}
 /* tabcontent3-----------------------------------------------------*/
 
 .tabcontent3{
-    display: block;
     padding: 38px 0 80px;
     background-color: #fcf5db;
 }
@@ -533,11 +525,6 @@ a{text-decoration: none; font-weight: bolder;}
 .bottom{
     width: 100%;
     height: 222px;
-    position: absolute;
-    z-index: 0;
-    top: 2754px;
-    left: 0;
-    right: 0;
 }
 
 .terms{
