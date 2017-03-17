@@ -124,26 +124,27 @@ a{text-decoration: none; font-weight: bolder;}
 	width: 971px;
     height: 148px;
     margin: 0 auto;
-
 }
 
 .tab_area>.tab_list>li{
     width: 313px;
     height: 150px;
-    overflow: hidden;
-    position: relative;
-    bottom:0px;
     display:inline-block;
+    /*position: relative;
+    bottom:0px;*/
+    overflow: hidden;
 }
+
+/*.tab_area>.tab_list>li:hover img{
+    position: absolute;
+    top: -150px;
+}*/
 .tab_area>.tab_list>li>a{
     display: block;
     width: 313px;
     height: 150px;
 }
-.tab_area>.tab_list>li:hover img{
-    position: absolute;
-    top: -150px;
-}
+
 .tab_area>.tab_list>li:first-child+li,
 .tab_area>.tab_list>li:first-child+li+li{
     margin-left:10px;
