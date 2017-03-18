@@ -122,7 +122,7 @@ a{text-decoration: none; font-weight: bolder;}
 
 .tab_area>.tab_list{
 	width: 971px;
-    height: 148px;
+    height: 120px;
     margin: 0 auto;
 }
 
@@ -130,15 +130,8 @@ a{text-decoration: none; font-weight: bolder;}
     width: 313px;
     height: 150px;
     display:inline-block;
-    /*position: relative;
-    bottom:0px;*/
-    overflow: hidden;
 }
 
-/*.tab_area>.tab_list>li:hover img{
-    position: absolute;
-    top: -150px;
-}*/
 .tab_area>.tab_list>li>a{
     display: block;
     width: 313px;
