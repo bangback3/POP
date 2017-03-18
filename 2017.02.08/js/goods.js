@@ -10,10 +10,16 @@ $(document).ready(function(){
     //     $('.sd > div').eq(idx).css('display','block').siblings().css('display','none');
     //
     // });
+
+    //안되는 부분! content가 보이지 않아서 보이게 하고싶어요!
+    //제일 첫번째content를 고정으로 처음에 보여주고 나머지는 버튼을 누를때 바뀌는 형식이었으면좋겠습니다!
+    //그리고 tab button이 mouseover했을때 click했을때와 같은 이미지로 보여지고
+    //mouseleave했을때 다시 원래 off이미지로 보이게하고싶습니다!
+
     $(".tab_area").each(function(){
            var tab = $(this);
            var tabBtn = tab.children(".tab_list").children("li").children("a");
-           var content = tab.children(".sd").children(".tabcontent");
+           var content = tab.children(".sd").children("div");
 
            // 탭버튼을 클릭했을때
            tabBtn.click(function(){
@@ -49,9 +55,5 @@ $(document).ready(function(){
            // 맨첫번째 탭버튼 클릭처리
            tabBtn.eq(0).click();
        });
-
-
-
-
 
 })
