@@ -80,4 +80,12 @@ $(function(){
     function bl(){
         $('body').prepend('<div class="bl"></div>')
     }
+
+    $('.floating_bn>.bn_close').click(function(){
+        $('.floating_bn').fadeOut(function(){
+            $(this).remove();
+        })
+
+    })
+
 })

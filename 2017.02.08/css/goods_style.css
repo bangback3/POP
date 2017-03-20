@@ -122,7 +122,7 @@ a{text-decoration: none; font-weight: bolder;}
 
 .tab_area>.tab_list{
 	width: 971px;
-    height: 148px;
+    height: 120px;
     margin: 0 auto;
 }
 
@@ -130,15 +130,8 @@ a{text-decoration: none; font-weight: bolder;}
     width: 313px;
     height: 150px;
     display:inline-block;
-    /*position: relative;
-    bottom:0px;*/
-    overflow: hidden;
 }
 
-/*.tab_area>.tab_list>li:hover img{
-    position: absolute;
-    top: -150px;
-}*/
 .tab_area>.tab_list>li>a{
     display: block;
     width: 313px;
@@ -151,39 +144,40 @@ a{text-decoration: none; font-weight: bolder;}
 }
 .tab_area>.sd>div{
     display: none;
+    margin-top:28px;
 }
 
 
 /* tabcontent1-----------------------------------------------------*/
 
-.tabcontent1{
+.tabcontent:first-child{
     padding: 38px 0 80px;
     background-color: #fcf5db;
 }
-.tabcontent1>ul{
+.tabcontent:first-child>ul{
     width: 966px;
     padding-left: 34px;
     margin: 0 auto;
 }
-.tabcontent1>ul>li{
+.tabcontent:first-child>ul>li{
     display: inline-block;
     width: 284px;
     height: 384px;
     margin: 20px 0 0 20px;
     background-color: #FFF;
 }
-.tabcontent1>ul>li>a>div:first-child{
+.tabcontent:first-child>ul>li>a>div:first-child{
     width: 284px;
     height: 284px;
     padding-bottom: 20px;
     text-align: center;
     position: relative;
 }
-.tabcontent1>ul>li>a>div:first-child>cite{
+.tabcontent:first-child>ul>li>a>div:first-child>cite{
     color: #000;
 }
 
-.tabcontent1>ul>li>a>div:first-child:after{
+.tabcontent:first-child>ul>li>a>div:first-child:after{
     display: block;
     position: absolute;
     z-index: 0;
@@ -201,44 +195,44 @@ a{text-decoration: none; font-weight: bolder;}
     height: 20px;
     padding: 132px 15px 132px 15px;
 }
-.tabcontent1>ul>li>a>.pd_1:after{
+.tabcontent:first-child>ul>li>a>.pd_1:after{
     content: "달콤하고 다양한 필링이 들어있어 여러 맛을 느낄 수 있는 뚜레쥬르의 대표 초콜릿 제품";
 }
-.tabcontent1>ul>li>a>.pd_2:after{
+.tabcontent:first-child>ul>li>a>.pd_2:after{
     content: "사랑의 달콤함이 팡팡 터질 것 같은 폭탄볼을 형상화한 뚜레쥬르만의 특별하고도 귀여운 제품";
 }
-.tabcontent1>ul>li>a>.pd_3:after{
+.tabcontent:first-child>ul>li>a>.pd_3:after{
     content: "요거트 초콜릿과 크랜베리가 믹스된 초콜릿을 유리병에 가득 담은 제품으로 사랑스런 포장 박스에 담아 선물하기 좋은 제품";
 }
-.tabcontent1>ul>li>a>.pd_4:after{
+.tabcontent:first-child>ul>li>a>.pd_4:after{
     content: "달콤하고 다양한 필링이 들어있어 여러 맛을 느낄 수 있는 화려함을 강조한 뚜레쥬르의 대표 초콜릿 제품";
 }
-.tabcontent1>ul>li>a>.pd_5:after{
+.tabcontent:first-child>ul>li>a>.pd_5:after{
     content: "러블리한 하트를 담은 수제 캔디를 유리병에 가득 담아낸 제품 (포장박스가 함께 제공)";
 }
-.tabcontent1>ul>li>a>.pd_6:after{
+.tabcontent:first-child>ul>li>a>.pd_6:after{
     content: "천연색소를 사용하고 있으며 캔디 속에 초코 카라멜이 들어있어 달콤한 캔디";
 }
-.tabcontent1>ul>li>a>.pd_7:after{
+.tabcontent:first-child>ul>li>a>.pd_7:after{
     content: "딸기향 필링이 들어간 바형태의 초콜릿으로 낱개 포장되어있어 손에 묻지않고 간편하게 꺼내 드실 수 있는 초콜릿";
 }
-.tabcontent1>ul>li>a>.pd_8:after{
+.tabcontent:first-child>ul>li>a>.pd_8:after{
     content: "프랑스산 과일향 캔디와 벌꿀이 듬뿍 들어있는 허니 캔디를 각각 유리병에 담아낸 제품 (포장박스가 함께 제공)";
 }
-.tabcontent1>ul>li>a>.pd_9:after{
+.tabcontent:first-child>ul>li>a>.pd_9:after{
     content: "내 마음이 열리듯 상자를 열면 강렬한 사랑을 느낄 수 있으며 다양한 필링의 초콜릿이 들어있는 제품";
 }
-.tabcontent1>ul>li>a>.pd_10:after{
+.tabcontent:first-child>ul>li>a>.pd_10:after{
     content: "크림치즈 프로스팅을 레드벨벳 시트에 샌드하고 장줄리앙 이미지픽으로 장식한 시즌 레드벨벳 케이크";
 }
-.tabcontent1>ul>li>a>div:first-child:hover:after{
+.tabcontent:first-child>ul>li>a>div:first-child:hover:after{
     opacity:1;
 }
-.tabcontent1>ul>li>a>div:first-child>img{
+.tabcontent:first-child>ul>li>a>div:first-child>img{
     width: 284px;
     height: 284px;
 }
-.tabcontent1>ul>li>a>div:first-child>cite{
+.tabcontent:first-child>ul>li>a>div:first-child>cite{
     position: absolute;
     left: 0;
     top:255px;
@@ -250,56 +244,56 @@ a{text-decoration: none; font-weight: bolder;}
     font-size: 20px;
     font-weight: bold;
 }
-.tabcontent1>ul>li>.button{
+.tabcontent:first-child>ul>li>.button{
     width: 284px;
     height: 55px;
     padding-bottom: 25px;
     text-align: center;
 }
-.tabcontent1>ul>li>.button>a{
+.tabcontent:first-child>ul>li>.button>a{
     display: inline-block;
     width: 99px;
     height: 55px;
 }
-.tabcontent1>ul>li>.button>a:first-child{
+.tabcontent:first-child>ul>li>.button>a:first-child{
     background-image: url(../img/goods/btn_buy.png);
     background-repeat: no-repeat;
 }
-.tabcontent1>ul>li>.button>a:first-child+a{
+.tabcontent:first-child>ul>li>.button>a:first-child+a{
     background-image: url(../img/goods/btn_detail.png);
     background-repeat: no-repeat;
 }
 
 /* tabcontent2-----------------------------------------------------*/
 
-.tabcontent2{
+.sd>div:first-child+div{
     padding: 38px 0 80px;
     background-color: #fcf5db;
 }
-.tabcontent2>ul{
+.sd>div:first-child+div>ul{
     width: 966px;
     padding-left: 34px;
     margin: 0 auto;
 }
-.tabcontent2>ul>li{
+.sd>div:first-child+div>ul>li{
     display: inline-block;
     width: 284px;
     height: 384px;
     margin: 20px 0 0 20px;
     background-color: #FFF;
 }
-.tabcontent2>ul>li>a>div:first-child{
+.sd>div:first-child+div>ul>li>a>div:first-child{
     width: 284px;
     height: 284px;
     padding-bottom: 20px;
     text-align: center;
     position: relative;
 }
-.tabcontent2>ul>li>a>div:first-child>cite{
+.sd>div:first-child+div>ul>li>a>div:first-child>cite{
     color: #000;
 }
 
-.tabcontent2>ul>li>a>div:first-child:after{
+.sd>div:first-child+div>ul>li>a>div:first-child:after{
     display: block;
     position: absolute;
     z-index: 0;
@@ -317,59 +311,59 @@ a{text-decoration: none; font-weight: bolder;}
     height: 20px;
     padding: 132px 15px 132px 15px;
 }
-.tabcontent2>ul>li>a>.pd_1:after{
+.sd>div:first-child+div>ul>li>a>.pd_1:after{
     content: "카카오 함량이 58%인 다크 초콜릿 16개가 다채로운 색상으로 포장이 되어있는 제품";
 }
-.tabcontent2>ul>li>a>.pd_2:after{
+.sd>div:first-child+div>ul>li>a>.pd_2:after{
     content: "장줄리앙의 손거울이 들어있으며 성냥 모양의 초콜릿 쿠키와 블랙 쇼콜라의 달콤함이 가득 터지는 선물하기 좋은 제품";
 }
-.tabcontent2>ul>li>a>.pd_3:after{
+.sd>div:first-child+div>ul>li>a>.pd_3:after{
     content: "블랙 쇼콜라와 달콤한 캔디를 장줄리앙의 사랑스런 일러스트가 그려져 있는 머그잔에 담아 선물하기 좋은 제품";
 }
-.tabcontent2>ul>li>a>.pd_4:after{
+.sd>div:first-child+div>ul>li>a>.pd_4:after{
     content: "뚜껑을 열면 사랑의 달콤함이 터지듯이 활짝 열리며 달콤함이 쏟아지는 러블리한 제품";
 }
-.tabcontent2>ul>li>a>.pd_5:after{
+.sd>div:first-child+div>ul>li>a>.pd_5:after{
     content: "뚜껑을 열면 사랑의 달콤함이 터지듯이 활짝 열리며 달콤한 스위츠들과 귀여운 곰돌이 인형이 나타나는 러블리한 제품";
 }
-.tabcontent2>ul>li>a>.pd_6:after{
+.sd>div:first-child+div>ul>li>a>.pd_6:after{
     content: "캐러멜, 비스킷, 커피빈, 과일 등이 들어있는 8종류의 볼 초콜릿을 골고루 담아 다양한 맛을 즐길 수 있는 달콤한 초코 가득 제품";
 }
-.tabcontent2>ul>li>a>.pd_7:after{
+.sd>div:first-child+div>ul>li>a>.pd_7:after{
     content: "작고 앙증맞은 네모 모양 캔디를 유리병에 함께 담아 선물하기 좋도록 포장이 되어있는 제품";
 }
-.tabcontent2>ul>li>a>.pd_8:after{
+.sd>div:first-child+div>ul>li>a>.pd_8:after{
     content: "프랑스산 발로나 초콜릿을 사용하였으며 입 안에서 살살녹는 고급 제품";
 }
-.tabcontent2>ul>li>a>.pd_9:after{
+.sd>div:first-child+div>ul>li>a>.pd_9:after{
     content: "네 가지 천연과일향과 다양한 과일/채소즙을 사용한 앙증맞은 곰돌이 모양의 젤리";
 }
-.tabcontent2>ul>li>a>.pd_10:after{
+.sd>div:first-child+div>ul>li>a>.pd_10:after{
     content: "여러가지 모양의 젤리를 함께 모아 골라먹는 즐거움을 더한 제품으로 5가지 천연과일향과 다양한 과일/채소즙을 사용한 젤리";
 }
-.tabcontent2>ul>li>a>.pd_11:after{
+.sd>div:first-child+div>ul>li>a>.pd_11:after{
     content: "라바와 친구들을 닮은 꿈틀이 모양 젤리로 천연과일향과 천연색소를 사용하여 안심하고 드실 수 있는 새콤달콤한 맛의 젤리";
 }
-.tabcontent2>ul>li>a>.pd_12:after{
+.sd>div:first-child+div>ul>li>a>.pd_12:after{
     content: "귀여운 형태의 티라미스로 진한 커피크림을 품고있는 달콤한 폭탄케이크!";
 }
-.tabcontent2>ul>li>a>.pd_13:after{
+.sd>div:first-child+div>ul>li>a>.pd_13:after{
     content: "진한 초코케이크에 알록달록 초코볼, 귀여운 마카롱과 세서미스트리트 아이싱 쿠키로 장식한 키덜트용 캐릭터 케이크";
 }
-.tabcontent2>ul>li>a>.pd_14:after{
+.sd>div:first-child+div>ul>li>a>.pd_14:after{
     content: "달콤한 솜사탕 향이 솔솔나고 딸기&화이트 시트 사이에 입안에서 톡톡 터지는 팝핑캔디를 샌드한 시즌 스페셜 케이크";
 }
-.tabcontent2>ul>li>a>.pd_15:after{
+.sd>div:first-child+div>ul>li>a>.pd_15:after{
     content: "진한 초콜릿과 생크림을 듬뿍 넣은 가나슈 초콜릿이 부드러운 시트와 크리미하게 잘 어우러지는 뚜레쥬르만의 시그니쳐 케이크";
 }
-.tabcontent2>ul>li>a>div:first-child:hover:after{
+.sd>div:first-child+div>ul>li>a>div:first-child:hover:after{
     opacity:1;
 }
-.tabcontent2>ul>li>a>div:first-child>img{
+.sd>div:first-child+div>ul>li>a>div:first-child>img{
     width: 284px;
     height: 284px;
 }
-.tabcontent2>ul>li>a>div:first-child>cite{
+.sd>div:first-child+div>ul>li>a>div:first-child>cite{
     position: absolute;
     left: 0;
     top:255px;
@@ -381,56 +375,56 @@ a{text-decoration: none; font-weight: bolder;}
     font-size: 20px;
     font-weight: bold;
 }
-.tabcontent2>ul>li>.button{
+.sd>div:first-child+div>ul>li>.button{
     width: 284px;
     height: 55px;
     padding-bottom: 25px;
     text-align: center;
 }
-.tabcontent2>ul>li>.button>a{
+.sd>div:first-child+div>ul>li>.button>a{
     display: inline-block;
     width: 99px;
     height: 55px;
 }
-.tabcontent2>ul>li>.button>a:first-child{
+.sd>div:first-child+div>ul>li>.button>a:first-child{
     background-image: url(../img/goods/btn_buy.png);
     background-repeat: no-repeat;
 }
-.tabcontent2>ul>li>.button>a:first-child+a{
+.sd>div:first-child+div>ul>li>.button>a:first-child+a{
     background-image: url(../img/goods/btn_detail.png);
     background-repeat: no-repeat;
 }
 
 /* tabcontent3-----------------------------------------------------*/
 
-.tabcontent3{
+.sd>div:first-child+div+div{
     padding: 38px 0 80px;
     background-color: #fcf5db;
 }
-.tabcontent3>ul{
+.sd>div:first-child+div+div>ul{
     width: 966px;
     padding-left: 34px;
     margin: 0 auto;
 }
-.tabcontent3>ul>li{
+.sd>div:first-child+div+div>ul>li{
     display: inline-block;
     width: 284px;
     height: 384px;
     margin: 20px 0 0 20px;
     background-color: #FFF;
 }
-.tabcontent3>ul>li>a>div:first-child{
+.sd>div:first-child+div+div>ul>li>a>div:first-child{
     width: 284px;
     height: 284px;
     padding-bottom: 20px;
     text-align: center;
     position: relative;
 }
-.tabcontent3>ul>li>a>div:first-child>cite{
+.sd>div:first-child+div+div>ul>li>a>div:first-child>cite{
     color: #000;
 }
 
-.tabcontent3>ul>li>a>div:first-child:after{
+.sd>div:first-child+div+div>ul>li>a>div:first-child:after{
     display: block;
     position: absolute;
     z-index: 0;
@@ -448,54 +442,54 @@ a{text-decoration: none; font-weight: bolder;}
     height: 20px;
     padding: 132px 15px 132px 15px;
 }
-.tabcontent3>ul>li>a>.pd_1:after{
+.sd>div:first-child+div+div>ul>li>a>.pd_1:after{
     content: "달콤함이 팡팡 터지는 다이너마이트를 연상 시키는 제품으로 가볍게 선물하기 좋은 제품";
 }
-.tabcontent3>ul>li>a>.pd_2:after{
+.sd>div:first-child+div+div>ul>li>a>.pd_2:after{
     content: "딸기맛과 레몬맛 캔디를 한쪽으로 트위스트 포장하여 내용물이 보이는 깜찍한 투명케이스에 담아 리본으로 포장한 귀여운 제품";
 }
-.tabcontent3>ul>li>a>.pd_3:after{
+.sd>div:first-child+div+div>ul>li>a>.pd_3:after{
     content: "웃는 모습이 인상적인 스마일 모양의 수제 캔디를 투명한 병에 담은 제품으로 웃음을 가득 드리고 싶은 마음을 담은 제품";
 }
-.tabcontent3>ul>li>a>.pd_4:after{
+.sd>div:first-child+div+div>ul>li>a>.pd_4:after{
     content: "카카오 함량이 58%인 다크 초콜릿 2개가 하나로 묶여있는 제품으로 선물하기에 좋은 쁘띠 사이즈 제품";
 }
-.tabcontent3>ul>li>a>.pd_5:after{
+.sd>div:first-child+div+div>ul>li>a>.pd_5:after{
     content: "꽈배기 모양의 롤리팝 스틱캔디로 친구, 동료에게 선물하기 좋은 제품";
 }
-.tabcontent3>ul>li>a>.pd_6:after{
+.sd>div:first-child+div+div>ul>li>a>.pd_6:after{
     content: "원형 모양의 롤리팝 스틱캔디로 친구, 동료에게 선물하기 좋은 제품";
 }
-.tabcontent3>ul>li>a>.pd_7:after{
+.sd>div:first-child+div+div>ul>li>a>.pd_7:after{
     content: "하트 모양의 롤리팝 스틱캔디로 친구, 동료에게 선물하기 좋은 제품";
 }
-.tabcontent3>ul>li>a>.pd_8:after{
+.sd>div:first-child+div+div>ul>li>a>.pd_8:after{
     content: "다양한 과일과 새콤한 사우어가 만난 젤리빈을 예쁜병에 담은 제품";
 }
-.tabcontent3>ul>li>a>.pd_9:after{
+.sd>div:first-child+div+div>ul>li>a>.pd_9:after{
     content: "천연색소와 천연향으로 과일 본연의 맛을 느낄 수 있는 종합과일맛 젤리빈을 예쁜병에 담은 제품";
 }
-.tabcontent3>ul>li>a>.pd_10:after{
+.sd>div:first-child+div+div>ul>li>a>.pd_10:after{
     content: "집모양도 만들고, 배모양도 만들 수 있는 블록형캔디를 예쁜병에 담은 제품";
 }
-.tabcontent3>ul>li>a>.pd_11:after{
+.sd>div:first-child+div+div>ul>li>a>.pd_11:after{
     content: "부드러운 아이스크림이 달콤한 머쉬멜로우로 변신한 아이스크림맛 무지방 머쉬멜로우";
 }
-.tabcontent3>ul>li>a>.pd_12:after{
+.sd>div:first-child+div+div>ul>li>a>.pd_12:after{
     content: "솔티카라멜 크림이 듬뿍 들어간 빵 위에 바삭한 하겔슈가를 토핑한 짠단의 조화가 잘 어울리는 번제품";
 }
-.tabcontent3>ul>li>a>.pd_13:after{
+.sd>div:first-child+div+div>ul>li>a>.pd_13:after{
     content: "알록달록하고 깜직한 하트와 과일 모양의 수제 캔디를 병에 담아 가볍게 선물하기에 좋은 제품";
 }
 
-.tabcontent3>ul>li>a>div:first-child:hover:after{
+.sd>div:first-child+div+div>ul>li>a>div:first-child:hover:after{
     opacity:1;
 }
-.tabcontent3>ul>li>a>div:first-child>img{
+.sd>div:first-child+div+div>ul>li>a>div:first-child>img{
     width: 284px;
     height: 284px;
 }
-.tabcontent3>ul>li>a>div:first-child>cite{
+.sd>div:first-child+div+div>ul>li>a>div:first-child>cite{
     position: absolute;
     left: 0;
     top:255px;
@@ -507,22 +501,22 @@ a{text-decoration: none; font-weight: bolder;}
     font-size: 20px;
     font-weight: bold;
 }
-.tabcontent3>ul>li>.button{
+.sd>div:first-child+div+div>ul>li>.button{
     width: 284px;
     height: 55px;
     padding-bottom: 25px;
     text-align: center;
 }
-.tabcontent3>ul>li>.button>a{
+.sd>div:first-child+div+div>ul>li>.button>a{
     display: inline-block;
     width: 99px;
     height: 55px;
 }
-.tabcontent3>ul>li>.button>a:first-child{
+.sd>div:first-child+div+div>ul>li>.button>a:first-child{
     background-image: url(../img/goods/btn_buy.png);
     background-repeat: no-repeat;
 }
-.tabcontent3>ul>li>.button>a:first-child+a{
+.sd>div:first-child+div+div>ul>li>.button>a:first-child+a{
     background-image: url(../img/goods/btn_detail.png);
     background-repeat: no-repeat;
 }

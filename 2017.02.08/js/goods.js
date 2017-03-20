@@ -1,70 +1,64 @@
-// $(document).ready(function(){
-//     $('.tab_area .sd div').hide();
-//     $('.tab_area .sd div').first().show();
-//
-//      $('ul.tab_list a').click(function () {
-//         var idx = $(this).index();
-//
-//         $('.sd div').eq(idx).show().siblings().hide();
-//         console.log('@@');
-//     });
-//     // $('.tab_area').on('click','.tab_list a', function(e){
-//     //     var $parent = $(this).parent();
-//     //     var _index = $parent.index();
-//     //     var $content = $(e.delegateTarget).find('.sd div').eq(_index);
-//     //     e.preventDefault();
-//     //
-//     //     $parent.add($content).addClass('active').siblings().removeClass('active');
-//     // }).find('.tab_list a').eq(0).trigger('click');
-// });
-$(function(){
 
-    var idx = 0 ;
+$(document).ready(function(){
 
-    $('.sd > div').eq(0).css('display','block')
-
-    $('.tab_list li').click(function(){
-        idx = $(this).index();
-        $('.sd > div').eq(idx).css('display','block').siblings().css('display','none');
-
-        // $('#list'+idx).css({position:'absolute',top:'-150px'});
-
-    });
-
-    /*$('#list'+idx).mouseover(function(){
-        $(this).css({position:'absolute',top:'-150px'});
-    });*/
-    // $('#list'+idx).mouseout(function(){
-    //     $(this).eq(idx).css({position:'absolute',top:'0px'});
+    // var idx = 0 ;
+    //
+    // $('.sd > div').eq(0).css('display','block')
+    //
+    // $('.tab_list li').click(function(){
+    //     idx = $(this).index();
+    //     $('.sd > div').eq(idx).css('display','block').siblings().css('display','none');
+    //
     // });
 
-    /*$('.tab_list li').mouseleave(function(){
-        idx = $(this).index();
-        $('#list'+idx).css({top:'0px'});
-    }*/
-    /*('.tab_list li').click(function(){
-        idx = $(this).index();
-        $('.sd > div').eq(idx).css('display','block').siblings().css('display','none')
+   
 
-    })*/
+    $(".tab_area").each(function(){
+           var tab = $(this);
+           var tabBtn = tab.children(".tab_list").children("li").children("a");
+           var content = tab.children(".sd").children("div");
 
+           // 탭버튼을 클릭했을때
+           tabBtn.click(function(){
+               // 이미 on 상태면 pass
+               if( $(this).hasClass("on") ) return;
 
-    //var list= $('.list');
+               // 모든 컨텐츠 부분을 안보이게 한뒤
+               content.hide().first().show();
 
-    // list.bind({
-    //     mouseover:function(){
-    //         var tg = $(this);
-    //         tg.removeClass().addClass('list over');
-    //     },
-    //     mouseout:function(){
-    //         var tg = $(this);
-    //         tg.removeClass().addClass('list out');
-    //     },
-    //     click:function(){
-    //         var tg = $(this);
-    //         tg.removeClass().addClass('list over');
-    //     }
-    // })
+               // 클릭한 tab 버튼(a태그) 옆의 모든 태그들은 보이도록
+               $(this).siblings().show();
 
+               // 모든탭 버튼에 있던 on 클래스를 빼고
+               // 현재 클릭한 탭메뉴 버튼에 on 클래스 추가
+               tabBtn.removeClass("on");
+               var idx = $(this).parent().index();
+               console.log(idx)
+               $(this).addClass("on");
+               
+               $('.sd>div').eq(idx).show().siblings().hide()
+               		
+               // 탭버튼를 쭉 돌면서 on 클래스가 있는 버튼만 on 이미지로 바꾸고
+               // 나머지 버튼들은 off 이미지로 바꾼다.
+               tabBtn.each(function(){
+            	   
+            	   
+            		   var src;
+                       var img = $(this).children("img");
+                       if( $(this).hasClass("on") ){
+                           src = img.attr("src").replace("_off.", "_on.");
+                       }else{
+                           src = img.attr("src").replace("_on.", "_off.");
+                       }
+
+                       img.attr("src", src);
+            	   
+                   
+               });
+           });
+
+           // 맨첫번째 탭버튼 클릭처리
+           tabBtn.eq(0).click();
+       });
 
 })

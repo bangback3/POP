@@ -6,6 +6,7 @@ select, textarea, button
 ul,li{list-style: none;}
 body{background-color: #373737;}
 a{text-decoration: none; font-weight: bolder;}
+*:focus {outline:none;}
 
 /*.guid-line{outline: 1px #00F solid;}*/
 
@@ -20,6 +21,22 @@ a{text-decoration: none; font-weight: bolder;}
     top: 24%;
     margin-right:-530px;
     padding: 0;
+}
+
+.floating_bn>a{
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.bn_close{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    float: right;
+    position: relative;
+    bottom: 90px;
+    right: 8px;
 }
 
 /* headline ----------------------------------------------------- */
